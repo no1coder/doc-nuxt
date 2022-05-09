@@ -35,6 +35,7 @@
 </template>
 
 <script setup>
+import {ref} from "vue";
 let len = ref(10)
 </script>
 
