@@ -4,12 +4,17 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "fix-memory-limit": "cross-env LIMIT=4096 increase-memory-limit"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.0.4",
     "naive-ui": "^2.28.2",
     "nuxt": "3.0.0-rc.1",
     "unplugin-vue-components": "^0.19.3"
+  },
+  "dependencies": {
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0"
   }
 }

@@ -1,63 +1,94 @@
 <template>
-<div>
-     <div class='text-4xl w-20 h-20 mx-auto'>项目初始化</div>
-     <n-space>
-        <n-button type="error">按钮</n-button>
-         <n-button type="tertiary">
-      Tertiary
-    </n-button>
-     </n-space>
-    <n-space vertical>
-    <n-date-picker v-model:value="ts1" type="date" :actions="['now']" />
-    <n-date-picker v-model:value="ts2" type="datetime" :actions="['now']" />
-    <n-date-picker v-model:value="range1" type="daterange" :actions="null" />
-    <n-date-picker
-      v-model:value="range2"
-      type="datetimerange"
-      :actions="['clear']"
-    />
-  </n-space>
-  <n-carousel>
-    <img
-      class="carousel-img"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel1.jpeg"
-    >
-    <img
-      class="carousel-img"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel2.jpeg"
-    >
-    <img
-      class="carousel-img"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel3.jpeg"
-    >
-    <img
-      class="carousel-img"
-      src="https://naive-ui.oss-cn-beijing.aliyuncs.com/carousel-img/carousel4.jpeg"
-    >
-  </n-carousel>
-</div>
- 
+  <n-radio-group
+      v-model:value="size"
+      name="left-size"
+      style="margin-bottom: 12px"
+  >
+    <n-radio-button value="small">
+      小
+    </n-radio-button>
+    <n-radio-button value="medium">
+      中
+    </n-radio-button>
+    <n-radio-button value="large">
+      大
+    </n-radio-button>
+  </n-radio-group>
+  <n-form
+      ref="formRef"
+      inline
+      :label-width="80"
+      :model="form"
+      :rules="rules"
+      :size="size"
+  >
+    <n-form-item label="姓名" path="user.name">
+      <n-input v-model:value="formValue.user.name" placeholder="输入姓名" />
+    </n-form-item>
+    <n-form-item label="年龄" path="user.age">
+      <n-input v-model:value="formValue.user.age" placeholder="输入年龄" />
+    </n-form-item>
+    <n-form-item label="电话号码" path="phone">
+      <n-input v-model:value="formValue.phone" placeholder="电话号码" />
+    </n-form-item>
+    <n-form-item>
+      <n-button attr-type="button" @click="handleValidateClick">
+        验证
+      </n-button>
+    </n-form-item>
+  </n-form>
+  <pre>{{ JSON.stringify(formValue, null, 2) }}
+</pre>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
+import { FormInst } from 'naive-ui'
 
 export default defineComponent({
   setup () {
+    const formRef = ref<FormInst | null>(null)
     return {
-      ts1: ref(null),
-      ts2: ref(1183135260000),
-      range1: ref(null),
-      range2: ref(null)
+      formRef,
+      size: ref('medium'),
+      formValue: ref({
+        user: {
+          name: '',
+          age: ''
+        },
+        phone: ''
+      }),
+      rules: {
+        user: {
+          name: {
+            required: true,
+            message: '请输入姓名',
+            trigger: 'blur'
+          },
+          age: {
+            required: true,
+            message: '请输入年龄',
+            trigger: ['input', 'blur']
+          }
+        },
+        phone: {
+          required: true,
+          message: '请输入电话号码',
+          trigger: ['input']
+        }
+      },
+      handleValidateClick (e: MouseEvent) {
+        e.preventDefault()
+        formRef.value?.validate((errors) => {
+          if (!errors) {
+            console.log(2222,errors)
+
+          } else {
+            console.log(errors)
+          }
+        })
+      }
     }
   }
 })
 </script>
-
-<style>
-.carousel-img {
-  width: 100%;
-  height: 240px;
-  object-fit: cover;
-}
-</style>
