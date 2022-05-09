@@ -1,0 +1,143 @@
+<template>
+    <div class="h-[87%] m-auto mt-2 border rounded-md ">
+        <div class="h-full w-full box-border ">
+            <ul class="h-[10%] w-full box-border">
+                <li class="h-full flex justify-between items-center">
+                    <div class="flex w-1/3 items-center pl-4">
+                        <label class="flex items-center " >
+                            <input type="checkbox"  class="h-4 w-4  mr-2 bg-red-400" />
+                            <span>所有文档</span>
+                        </label>
+                        <span class="fold px-3 pl-5 ml-2 cursor-pointer">全部折叠</span>
+                        <span class="open px-3 pl-5 cursor-pointer">全部展开</span>
+                    </div>
+                    <div class="w-1/4">
+                        <span class="cursor-pointer">
+                            默认展开:
+                            <div class="inline-block">
+                                <n-space class="">
+                                    <n-dropdown class="max-w-[150px]" trigger="click" :options="options" placement="bottom-end">
+                                        <n-button class="AllOpen pl-1 pr-6">全部层级</n-button>
+                                    </n-dropdown>
+                                </n-space>
+                            </div>   
+                        </span>
+                        <span class="cursor-pointer ml-3">
+                            文档信息:
+                            <div class="inline-block box">
+                                <n-space >
+                                    <n-dropdown class="max-w-[150px]" trigger="click" :options="options" placement="bottom-end">
+                                        <n-button class="AllOpen pl-1 pr-6">更新时间</n-button>
+                                    </n-dropdown>
+                                </n-space>
+                            </div> 
+                        </span>
+                    </div>
+                </li>
+            </ul>
+   
+
+            <div class="row h-[90%] w-full box-border bg-white">
+                <div class="col-8 pt-3" >
+                    <CategoryNested :tasks="list" />
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script setup >
+// const name = "nested-example";
+// const display = "Nested";
+// const order = 15;
+
+let  list = ref([
+    {
+        name: "task 1",
+        time:'05-07 22:08',
+        tasks: [
+        {
+            name: "task 2",
+            time:'05-07 22:08',
+            tasks: []
+        }
+        ]
+    },
+    {
+        name: "task 3",
+        time:'05-07 22:08',
+        tasks: [
+        {
+            name: "task 4",
+            time:'05-07 22:08',
+            tasks: []
+        }
+        ]
+    },
+    {
+        name: "task 5",
+        time:'05-07 22:08',
+        tasks: []
+    }
+      ])
+
+const showDropdownRef = ref(false);
+const options = [
+        {
+          label: '全部层级',
+          key: 'All levels',
+        },
+        {
+          label: '第一级',
+          key: "first stage"
+        },
+        {
+          label: '第二级',
+          key: 'Second stage'
+        },
+        {
+          label: '第三级',
+          key: 'Third level'
+        }
+      ];
+
+ 
+</script>
+
+<style lang="less">
+.open{
+    background: url('../../assets/images/选择器展开.png') no-repeat;
+    background-size: 18px 18px;
+    background-position: 2px 2px;
+}
+.fold{
+    background: url('../../assets/images/折叠.png') no-repeat;
+    background-size: 15px 15px;
+    background-position: 2px 4px;
+}
+.AllOpen{
+    background: url('../../assets/images/选择器展开.png') no-repeat;
+    background-size: 18px 18px;
+    background-position: 60px;
+    --n-border:none !important;
+    --n-border-hover:none !important;
+    --n-text-color-hover:black;
+    --n-border-pressed:none !important;
+    --n-border-focus:none !important;
+    --n-border-disabled:none !important;
+    --n-text-color-hover:opacity !important;
+    --n-text-color-pressed:opacity !important;
+    --n-text-color-focus:opacity !important;
+    --n-ripple-color:white !important;
+}
+.v-binder-follower-content{
+    .n-dropdown-option{
+        .n-dropdown-option-body__label{
+            width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
+</style>
