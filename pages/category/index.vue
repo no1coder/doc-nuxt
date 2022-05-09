@@ -7,7 +7,7 @@
           <NuxtLink to="/">
             <h1 class="logo h-8"></h1>
           </NuxtLink>
-          <input class="navbar-input h-9 w-4/12 text-sm px-9 mx-12 rounded-2xl" type="text" placeholder="搜索">
+          <input class="outline-0 navbar-input h-9 w-4/12 text-sm px-9 mx-12 rounded-2xl" type="text" placeholder="搜索">
           <div class="flex justify-end items-center w-full">
             <NuxtLink class="opacity-70 ml-3 text-base text-white font-medium">
               首页
