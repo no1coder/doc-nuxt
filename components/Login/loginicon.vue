@@ -1,7 +1,7 @@
 <template>
-  <div class="flex space-x-20 p-1 my-1.5">
-    <img class="ml-24 w-11" src="../../public/img/wx.png" alt="微信登录" @click="loginwx">
-    <img class="w-11" src="../../public/img/QQ.png" alt="QQ登录" @click="loginqq">
+  <div class="flex space-x-20 p-1">
+    <img class="ml-24 w-11" src="../../assets/img/wx.png" alt="微信登录" @click="loginwx">
+    <img class="w-11" src="../../assets/img/QQ.png" alt="QQ登录" @click="loginqq">
   </div>
 </template>
 
