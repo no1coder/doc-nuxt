@@ -53,30 +53,48 @@
 
 let  list = ref([
     {
-        name: "task 1",
+        name: "一级数据1",
         time:'05-07 22:08',
+        level:1,
         tasks: [
-        {
-            name: "task 2",
-            time:'05-07 22:08',
-            tasks: []
-        }
+            {
+                name: "二级数据1",
+                time:'05-07 22:08',
+                level:2,
+                tasks: []
+            },
+            {
+                name: "二级数据11",
+                time:'05-07 22:08',
+                level:2,
+                tasks: [
+                    {
+                        name: "三级数据1",
+                        time:'05-07 22:08',
+                        level:3,
+                        tasks: []
+                    }
+                ]
+            }
         ]
     },
     {
-        name: "task 3",
+        name: "一级数据2",
         time:'05-07 22:08',
+        level:1,
         tasks: [
-        {
-            name: "task 4",
-            time:'05-07 22:08',
-            tasks: []
-        }
+            {
+                name: "二级数据2",
+                time:'05-07 22:08',
+                level:2,
+                tasks: []
+            }
         ]
     },
     {
-        name: "task 5",
+        name: "一级数据3",
         time:'05-07 22:08',
+        level:1,
         tasks: []
     }
       ])
