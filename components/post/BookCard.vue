@@ -1,13 +1,13 @@
 
   <template>
-  <div class="card hover">
+  <div class="card hover" @mouseover="over" @mouseout="out">
     <div :body-style="{ padding: '0px' }">
         <img
         src="@/assets/post/image.jpeg"
         class="image"
         />
         <div> 
-            <div class="bookName">1. 古诗词里面的快意人生</div>
+            <div class="bookName">让我们灵魂激荡身体欢愉：一个男科医生的手记</div>
             <div class="bookWhiter">大老板</div>
         </div>
     </div>
@@ -15,22 +15,39 @@
    
 </template>
 
-<script>
+<script setup>
+
+let over =()=>{
+  console.log('yi')
+}
+
+let out =()=>{
+  console.log('移出');
+}
+
+// card.mouseover(function(){
+//   console.log('移入');
+// })
+// card.mouseout(function(){
+//   console.log('移出')
+// })
 
 </script>
 
-<style  >
+<style  scoped>
 
 .card{
-    width:40%;
-    margin:5px 0px 20px 40px ;
+    margin:5px 0px 0px 20px ;
     float:left;
     color:white;
     padding-bottom:20px;
     border-bottom:1px solid rgb(54, 54, 54);
 }
 img{
-    width:30%;
+    margin-top:10px;
+    margin-left:20px;
+    width: 64px;
+    height: 92px ;
     float:left;
 }
 .bookName{
@@ -61,9 +78,8 @@ img{
 
 
 .hover:hover{
-  background:-webkit-linner-gradient(
-    left,#1f2124,#5a5e64
-  );
+  background:linear-gradient(to right,#141618,#212224);
+  border-radius:5px;
 }
 
 

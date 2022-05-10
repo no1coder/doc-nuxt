@@ -1,7 +1,7 @@
 <template>
 
- <div class="search">
-    <img src="@/assets/post/logo.png"  class="logo"/>
+ <div class="search ">
+    <img src="@/assets/post/logo.png"  class="logo center"/>
     <br/>
     <div class="searchBox">
       <span class="searchBox-left"></span>
@@ -23,16 +23,14 @@
 .search{
   text-align: center;
   background-color:#1f2022;
-  height:300px;
+  height:330px;
+  padding-top:80px;
 
 }
 .logo{
-    margin-top:70px;
     height:36px;
     width:160px;
-    margin-left:44%;
-    margin-bottom:40px;
-    
+    margin: 0 auto 18px;    
 }
 
 .searchBox{
@@ -44,7 +42,7 @@
     height:52px;
     // background-color:rgba(238,240,244,.1);
     background-color:white;
-    margin:40px auto 0;
+    margin:20px auto 0;
     border-radius:36px;
     }
 .searchBox-left{
