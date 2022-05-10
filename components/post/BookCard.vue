@@ -30,7 +30,7 @@
     border-bottom:1px solid rgb(54, 54, 54);
 }
 img{
-    width:34%;
+    width:30%;
     float:left;
 }
 .bookName{
