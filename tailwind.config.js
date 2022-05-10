@@ -1,3 +1,6 @@
+
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -6,6 +9,7 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     // "./nuxt.config.{js,ts}",
   ],
+
   theme: {
     extend: {},
     screens: {
@@ -26,6 +30,15 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
+    colors: {
+      // Build your palette here
+      transparent: 'transparent',
+      current: 'currentColor',
+      gray: colors.trueGray,
+      red: colors.red,
+      blue: colors.sky,
+      yellow: colors.amber,
+    }
   },
   plugins: [],
 };

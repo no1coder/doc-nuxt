@@ -1,8 +1,6 @@
 <template>
-  <div class="w-3/12 h-full">
-
-    <n-space vertical class="h-full fixed z-50">
-
+  <div class="w-full h-screen catalog fixed">
+    <n-space vertical class="h-screen tm">
       <!--          <n-switch v-model:value="collapsed" />-->
       <n-layout has-sider class="h-screen">
 
@@ -10,32 +8,32 @@
             bordered
             collapse-mode="width"
             :collapsed-width="5"
-            :width="300"
             show-trigger
+            :width="290"
             @collapse="collapsed = true"
             @expand="collapsed = false"
         >
-          <ReadLeftHead></ReadLeftHead>
+          <DocumentReadLeftHead></DocumentReadLeftHead>
 
           <n-collapse class="ml-4 border-box w-4/5">
             <div class="ml-5 whitespace-nowrap overflow-hidden">Zoom 2022 苏州、杭州、合肥开发测试职位，不加班（Java、C++、前端、Android、iOS、Mac）</div>
 <!--                            自定义图标-->
             <template #arrow>
               <n-icon>
-                <img src="assets/images/icon/sanjiao.svg" class="w-4 h-4" />
+                <img src="~assets/images/icon/sanjiao.svg" class="w-4 h-4" />
               </n-icon>
             </template>
 
 
-            <n-collapse-item v-for="items in menuOptions"  :title=items.whateverLabel :name="items.name">
+            <n-collapse-item v-for="items in menuOptions" :key="items.name"  :title=items.whateverLabel :name="items.name">
               <n-collapse>
                 <template #arrow>
                   <n-icon>
-                    <img src="assets/images/icon/sanjiao.svg" class="w-4 h-4" />
+                    <img src="~assets/images/icon/sanjiao.svg" class="w-4 h-4" />
                   </n-icon>
                 </template>
 
-                <n-collapse-item v-for="sub in items.whateverChildren"  :title=sub.whateverLabel :name="sub.name">
+                <n-collapse-item v-for="sub in items.whateverChildren" :key="items.name" :title=sub.whateverLabel :name="sub.name">
                 </n-collapse-item>
 
               </n-collapse>
@@ -52,7 +50,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 
 
 const menuOptions = [
@@ -144,13 +142,22 @@ const menuOptions = [
 ]
 
 
+
+
+
 </script>
 <style scoped>
+.catalog{
+  width:315px;
+  background-color: rgba(255, 255, 255, 0);
+}
 .n-layout-sider--show-content{
-  max-width: 320px;
+  width:300px
 }
 .n-layout-sider{
   background-color: #fbfbfb;
 }
-
+.n-layout--static-positioned{
+  --n-color: rgba(255, 255, 255, 0);
+}
 </style>
