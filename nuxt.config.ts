@@ -4,7 +4,10 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  buildModules: ['@nuxtjs/tailwindcss'],
+  buildModules: [
+      '@nuxtjs/tailwindcss',
+      '@pinia/nuxt',
+  ],
   build: {
     transpile: ['vueuc'],
     postcss: {
@@ -25,5 +28,9 @@ export default defineNuxtConfig({
     ssr: {
         noExternal: ['moment', 'naive-ui', '@juggle/resize-observer', ]
     }
-}
+},
+    // 公共的配置
+    publicRuntimeConfig: {
+        apiUrl: process.env.API_URL,
+    },
 });
