@@ -1,7 +1,8 @@
 <template>
-  <div class="py-16 ml-48 ">
+  <div class="pt-16 ml-0 lg:ml-48">
+    <h1 class="text-white">前端</h1>
     <div class="flex flex-wrap">
-      <NuxtLink class="bg-gradient-to-r hover:from-black hover:to-stone-900">
+      <NuxtLink class="bg-gradient-to-r hover:from-black hover:to-stone-900" id="1">
         <div class="flex py-5 overflow-hidden items-center">
           <p class="flex-shrink w-20 text-xl text-center text-white">1</p>
           <div class="flex-shrink-0 booklist block">
