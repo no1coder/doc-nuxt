@@ -17,4 +17,6 @@ export const useUserStore = defineStore('main', {
             return state.userInfo;
         }
     }
+
 })
+
