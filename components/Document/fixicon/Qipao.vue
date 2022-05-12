@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span class="text border absolute right-0 bottom-8 text-sm text-center">2</span>
+    <span class="text border absolute right-0 bottom-8 text-xs text-inherit text-center">2</span>
     <span class="back flex justify-center items-center">
       <img src="~assets/images/icon/qipao.svg" alt=""/>
     </span>

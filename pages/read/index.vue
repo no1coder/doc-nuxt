@@ -5,7 +5,6 @@
     </div>
     <div class="flex-auto">
         <DocumentReadrightRight></DocumentReadrightRight>
-
     </div>
   </div>
 </template>

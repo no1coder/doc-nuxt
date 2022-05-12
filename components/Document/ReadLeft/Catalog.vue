@@ -25,7 +25,7 @@
             </template>
 
 
-            <n-collapse-item v-for="items in menuOptions" :key="items.name"  :title=items.whateverLabel :name="items.name">
+            <n-collapse-item class="pb-4" v-for="items in menuOptions" :key="items.name"  :title=items.whateverLabel :name="items.name">
               <n-collapse>
                 <template #arrow>
                   <n-icon>
@@ -159,5 +159,10 @@ const menuOptions = [
 }
 .n-layout--static-positioned{
   --n-color: rgba(255, 255, 255, 0);
+}
+.n-collapse-item--left-arrow-placement:hover{
+  background: #e0dddd;
+  border-radius:5px;
+
 }
 </style>

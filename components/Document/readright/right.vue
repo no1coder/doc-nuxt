@@ -13,8 +13,7 @@
   <div class="fixed right-6 bottom-8 h-auto w-auto">
     <DocumentFixiconZan class="mt-4"></DocumentFixiconZan>
     <DocumentFixiconQipao class="mt-4"></DocumentFixiconQipao>
-    <DocumentFixiconQipao class="mt-4"></DocumentFixiconQipao>
-    <DocumentFixiconQipao class="mt-4"></DocumentFixiconQipao>
+    <DocumentFixiconMobile class="mt-4"></DocumentFixiconMobile>
   </div>
 </template>
 
