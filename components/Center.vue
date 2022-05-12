@@ -44,7 +44,5 @@ img{
   height: 28px;
 
 }
-.n-button{
-  --n-border: 1px solid rgba(224, 224, 230, 0) !important;
-}
+
 </style>
