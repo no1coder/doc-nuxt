@@ -24,9 +24,6 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
         Components({
-
-
-
             resolvers: [NaiveUiResolver()], // Automatically register all components in the `components` directory
         }),
     ],
