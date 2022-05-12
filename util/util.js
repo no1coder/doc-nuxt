@@ -32,8 +32,13 @@ export const numberFormat  = function (value) {
 }
 
 
+<<<<<<< HEAD
 export const  isLogin = () =>{
 
+=======
+// 判断是否登录的方法
+export const  isLogin = () =>{
+>>>>>>> e132d484de16d512aa2ce2ccf800d56550b1cba9
   // 判断当前用户的Token是否存在
   const userStore = useUserStore();
   if(userStore.token){
@@ -42,7 +47,10 @@ export const  isLogin = () =>{
   handleClick()
   return false;
   // 如果存在的 返回 true
+<<<<<<< HEAD
 
+=======
+>>>>>>> e132d484de16d512aa2ce2ccf800d56550b1cba9
   // 否则返回 false
 }
 
@@ -60,4 +68,8 @@ export const  logout = ()=>{
   // 清空 store userInfo
   userStore.userInfo = undefined;
   return true;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e132d484de16d512aa2ce2ccf800d56550b1cba9
