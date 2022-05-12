@@ -170,5 +170,8 @@ img{
   height: 28px;
 
 }
-
+.n-button{
+  --n-border: 1px solid rgba(224, 224, 230, 0) !important;
+  --n-border-hover: 1px solid rgba(54, 173, 106, 0) !important ;
+}
 </style>
