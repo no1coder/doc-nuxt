@@ -16,8 +16,16 @@
     "unplugin-vue-components": "^0.19.3"
   },
   "dependencies": {
+<<<<<<< HEAD:nuxt-app/package.json
     "md-editor-v3": "^1.11.12",
     "sanitize-html": "^2.7.0"
 >>>>>>> c220ae0e5c6fbe9d36aa0608fd199c55242ee4dd:package.json
+=======
+    "@nuxtjs/composition-api": "^0.32.0",
+    "@pinia/nuxt": "^0.1.9",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "pinia": "^2.0.14"
+>>>>>>> e1e19d3f3e6eea816d7762208e89f4ce24c69fa8:package.json
   }
 }

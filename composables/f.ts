@@ -14,14 +14,11 @@ class baseFetch {
             authorization: undefined
         };
         // 将配置的.env文件赋值
-
         if (userStore.token) {        // 如果有值的时候赋值进去
             headers.authorization = 'Bearer ' + userStore.token;
         }
         return headers;        // 返回
     }
-
-    // 获取fetch 默认配置
     getCreate = () => {
 
         let config = useRuntimeConfig()         // 将运行的时候nuxt.config.ts配置文件进行配置
@@ -86,7 +83,8 @@ class baseFetch {
         }
         // 配置失败提示全局效果 将里面的error返回具体提示消息
         if (!process.server && error.message) {
-            message.error(error.message)
+
+            console.log((error.message));
         }
     }
 

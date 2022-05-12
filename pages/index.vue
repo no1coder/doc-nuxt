@@ -1,54 +1,49 @@
 <template>
   <n-space>
-    <n-popover
+    <n-tooltip
         placement="bottom"
         trigger="hover"
         @update:show="handleUpdateShow"
     >
       <template #trigger>
-        <n-button>悬浮</n-button>
+
+        <n-button> 悬浮 </n-button>
       </template>
-      <span>我希望她们都是加州女孩</span>
-    </n-popover>
-    <n-popover
+      <span> I wish they all could be California girls </span>
+    </n-tooltip>
+    <n-tooltip
         placement="bottom"
         trigger="click"
         @update:show="handleUpdateShow"
     >
       <template #trigger>
-        <n-button>点击</n-button>
+        <n-button> 点击 </n-button>
       </template>
-      <span>我希望她们都是加州女孩</span>
-    </n-popover>
-    <n-popover
-        :show="showPopover"
-        placement="bottom"
-        trigger="manual"
-        @update:show="handleUpdateShow"
-    >
+      <span> I wish they all could be California girls </span>
+    </n-tooltip>
+    <n-tooltip :show="showPopover" trigger="manual" placement="bottom">
       <template #trigger>
         <n-button @click="showPopover = !showPopover">
-          点击
+          手动（不会有事件发出来）
         </n-button>
       </template>
-      <span>我希望她们都是加州女孩</span>
-    </n-popover>
+      <span> I wish they all could be California girls </span>
+    </n-tooltip>
   </n-space>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref } from 'vue'
-import { useMessage } from 'naive-ui'
+<script>
+import { defineComponent, ref } from "vue";
 
 export default defineComponent({
-  setup () {
-    const message = useMessage()
+  setup() {
+    // const message = useMessage();
     return {
       showPopover: ref(false),
-      handleUpdateShow (show: boolean) {
-        message.success(show ? 'show' : 'hide')
+      handleUpdateShow(show) {
+        message.success(show + "");
       }
-    }
+    };
   }
-})
+});
 </script>
