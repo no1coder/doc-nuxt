@@ -1,5 +1,12 @@
 import { setup } from '@css-render/vue3-ssr';
 import { defineNuxtPlugin } from '#app';
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+
+
+
+
 // I'm not sure whether the plugin is called twice in each refreshing
 // Maybe it's expected. If you have more information about it, please comment in the issue
 
@@ -13,5 +20,6 @@ export default defineNuxtPlugin((nuxtApp) => {
                 headTags: result['headTags'] + collect()          // 组合样式跟head信息
             };
         };
-    }
+    };
+
 });

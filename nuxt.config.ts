@@ -3,8 +3,13 @@ import Components from 'unplugin-vue-components/vite';
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
+// @ts-ignore
+// @ts-ignore
+// @ts-ignore
 export default defineNuxtConfig({
   buildModules: ['@nuxtjs/tailwindcss'],
+  components: true,
+
   build: {
     transpile: ['vueuc'],
     postcss: {
@@ -19,6 +24,9 @@ export default defineNuxtConfig({
   vite: {
     plugins: [
         Components({
+
+
+
             resolvers: [NaiveUiResolver()], // Automatically register all components in the `components` directory
         }),
     ],
