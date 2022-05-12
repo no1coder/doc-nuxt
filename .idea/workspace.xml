@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/components/category/Row.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/24gf-ellipsisVertical.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/veer-132547819.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/veer-141544254.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/分组管理.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/加号.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/展开菜单.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/折叠.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/文档.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/方向-向左.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/编辑器 · 添加链接.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/选择器展开.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/问号.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/category/Content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Content.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/category/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/category/Item-sub.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Item-sub.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/category/Item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Item.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/category/Nested.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Nested.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/category/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Search.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/category/raw.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/web/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/web/index.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="zcq" />
+                    <option name="lastUsedInstant" value="1652090323" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1652090322" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28uvok9o9JNUNsJLlTJcIzoL4xQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MTConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm 2021.3.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="" />
+      <created>1652079461981</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652079461981</updated>
+      <workItem from="1652079473017" duration="27098000" />
+      <workItem from="1652232183908" duration="30039000" />
+      <workItem from="1652319339707" duration="5934000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/category/Content.vue</url>
+          <line>103</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
