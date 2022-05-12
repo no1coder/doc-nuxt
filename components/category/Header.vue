@@ -5,7 +5,7 @@
                 <template #header>
                     <n-breadcrumb class="h-full my-4 text-lg pl-10 flex items-center">
                         <div class="inline-block px-2">
-                            <img class="w-6 h-6 inline-block" src="../../assets/images/方向-向左.png" alt="">
+                            <img class="w-6 h-6 inline-block" src="../../assets/images/向左1.svg" alt="">
                         </div>
                         <div class="inline-block">
                             <n-breadcrumb-item class="px-2">播客</n-breadcrumb-item>

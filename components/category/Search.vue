@@ -7,50 +7,56 @@
             <div class="ml-1">  
                 <n-popover trigger="hover" class="bg-black " :style="{ backgroundColor:'black' }">
                     <template #trigger class="bg-black">
-                        <img class="h-4 w-4 cursor-pointer" src="../../assets/images/问号.png" alt="">
+                        <img class="h-4 w-4 cursor-pointer" src="../../assets/images/问号.svg" alt="">
                     </template>
                     <span class="text-white">仅成员所见,存放不在目录上的文档</span>
                 </n-popover> 
             </div>
         </div>
-        <div class="w-1/3 flex h-9 justify-between">
-            <input type="text" class="border w-2/3 search pl-10 rounded-md  " placeholder="输入标题进行搜索">
-            <button class="border px-8 rounded-md bg-green-500 text-white">新建</button>
+        <div class="w-1/3 h-9 flex justify-end">
+            <input type="text" class="border w-2/3 h-full search pl-10 rounded-md md:mr-[4%] lg:mr-[6%] " placeholder="输入标题进行搜索">
+			<n-dropdown trigger="click" :options="data" @select="handleSelect"  placement="bottom-end" class="w-36">
+				<button class="text-white bg-green-500 w-20 h-full rounded-sm">新建</button>
+			</n-dropdown>
         </div>
     </div>
 </div>
     
 </template>
 
-<script setup>
-const name = "nested-example";
-const display = "Nested";
-const order = 15;
+<script setup lang="ts">
+import {h} from 'vue'
 
-let  list = ref([
-    {
-        name: "task 1",
-        tasks: [
-        {
-            name: "task 2",
-            tasks: []
-        }
-        ]
-    },
-    {
-        name: "task 3",
-        tasks: [
-        {
-            name: "task 4",
-            tasks: []
-        }
-        ]
-    },
-    {
-        name: "task 5",
-        tasks: []
-    }
-      ])
+const renderImg = (src) => {
+	return () => {
+		return h('img',{
+			src,
+			style:'width:10px;height:20px'
+		})
+	}
+}
+
+const data = [
+	{
+		label: '文档',
+		key: 'file',
+		icon:renderImg('assets/images/文档.svg')
+	},
+	{
+		label: '新建分组',
+		key: 'New group',
+		icon:renderImg('assets/images/分组管理.svg')
+	},
+	{
+		label: '添加链接',
+		key: 'Add link',
+		icon:renderImg('assets/images/链接.svg')
+	},
+];
+const handleSelect = (key: string | number) => {
+	
+	}
+
 </script>
 
 <style>

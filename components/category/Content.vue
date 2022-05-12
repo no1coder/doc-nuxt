@@ -1,9 +1,9 @@
 <template>
-    <div class="h-[87%] m-auto mt-2 border rounded-md ">
-        <div class="h-full w-full box-border ">
+    <div class="h-[95%] w-full box-border  mt-2 border rounded-md ">
+        <div class="h-full w-full box-border">
             <ul class="h-[10%] w-full box-border">
                 <li class="h-full flex justify-between items-center">
-                    <div class="flex w-1/3 items-center pl-4">
+                    <div class="flex md:w-1/2 lg:w-1/3 items-center pl-4">
                         <label class="flex items-center " >
                             <input type="checkbox"  class="h-4 w-4  mr-2 bg-red-400" />
                             <span>所有文档</span>
@@ -11,7 +11,7 @@
                         <span class="fold px-3 pl-5 ml-2 cursor-pointer">全部折叠</span>
                         <span class="open px-3 pl-5 cursor-pointer">全部展开</span>
                     </div>
-                    <div class="w-1/4">
+                    <div class="xl:w-1/4 text-right mr-5">
                         <span class="cursor-pointer">
                             默认展开:
                             <div class="inline-block">
@@ -41,6 +41,7 @@
                 <div class="col-8 pt-3" >
                     <CategoryNested :tasks="list" />
                 </div>
+<!--				<CategoryRow class="col-3" :value="list" title="List" />-->
             </div>
         </div>
     </div>
@@ -53,12 +54,12 @@
 
 let  list = ref([
     {
-        name: "一级数据1",
+        name: "一级数据12131`23123",
         time:'05-07 22:08',
         level:1,
         tasks: [
             {
-                name: "二级数据1",
+                name: "二级数",
                 time:'05-07 22:08',
                 level:2,
                 tasks: []
@@ -122,21 +123,21 @@ const options = [
  
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .open{
-    background: url('../../assets/images/选择器展开.png') no-repeat;
+    background: url('../../assets/images/do.svg') no-repeat;
     background-size: 18px 18px;
-    background-position: 2px 2px;
+    background-position: 0px -2px;
 }
 .fold{
-    background: url('../../assets/images/折叠.png') no-repeat;
-    background-size: 15px 15px;
-    background-position: 2px 4px;
+    background: url('../../assets/images/向右.svg') no-repeat;
+    background-size: 18px 18px;
+    background-position: 0px 0px;
 }
 .AllOpen{
-    background: url('../../assets/images/选择器展开.png') no-repeat;
+    background: url('../../assets/images/do.svg') no-repeat;
     background-size: 18px 18px;
-    background-position: 60px;
+    background-position: 62px 4px;
     --n-border:none !important;
     --n-border-hover:none !important;
     --n-text-color-hover:black;

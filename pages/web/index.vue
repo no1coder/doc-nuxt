@@ -6,9 +6,13 @@
         </div>
        
         <!-- 内容部分 -->
-        <div class="container max-w-7xl m-auto pt-1 bg-slate-50 h-[91%]">
-            <CategorySearch />
-            <CategoryContent />
+        <div class="container 2xl:max-w-7xl m-auto w-full box-border pt-1 bg-slate-50 h-[91%]">
+			<div class="h-[7%] w-full box-border">
+				<CategorySearch />
+			</div>
+			<div class="h-[92%] w-full box-border">
+				<CategoryContent />
+			</div>
         </div>
   
     </div>

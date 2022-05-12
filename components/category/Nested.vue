@@ -5,15 +5,19 @@
 		:list="tasks"
 		:group="{ name: 'g1' }"
 		item-key="name"
+		@end="onEnd"
 	>
 		<template #item="{ element }" >
 			<li >
-                <CategoryItem :element="element" ></CategoryItem>
+				<div @click.stop="stop">
+					<CategoryItem :element="element" ></CategoryItem>
+				</div>
 			</li>
 		</template>
 	</draggable>
 </template>
 <script setup>
+// import { ref, watch } from 'vue'
 import draggable from "vuedraggable";
 let props = defineProps({
 	tasks:{
@@ -22,10 +26,29 @@ let props = defineProps({
 	}
 })
 
-let itemsActive = ref(true);
+const stop = () => {}
+
+watch(props.tasks,(newQuestion, oldQuestion) => {
+	console.log(newQuestion)
+})
+
+const onMoveCallback = (evt, originalEvent) => {
+	console.log(evt)
+	// return false; — for cancel
+};
+
+// const onEnd = () => {
+// 	// 可在此函数中直接拿到了改变顺序后的list列表
+// 	// console.log(this,11111111)
+//
+// 	function added(newIndex,element){
+// 		console.log(newIndex)
+// 	}
+// 	// props.map(item => console.log(item.title));
+// }
+//
 
 
-const name = "nested-draggable"
 </script>
 
 <style>
