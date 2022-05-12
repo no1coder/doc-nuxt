@@ -2,11 +2,11 @@
   <template>
   <div class="tab">
     <div class="tabBox">
-      <img src="@/assets/post/首页.png"/><br/>
-      <div class="text"> &nbsp; 书  城</div>
+      <img src="@/assets/post/首页.png"/>
+      <div class="text">书城</div>
       </div>
     <div class="tabBoxR">
-      <img src="@/assets/post/图书.png"/><br/>
+      <img src="@/assets/post/图书.png"/>
       <div class="text">下载微信读书App·百万好书免费读</div>
       
     </div>
@@ -52,9 +52,7 @@ export default {
   img{
     width:20px;
     height:20px;
-    margin-top:10px;
-    margin-bottom:-5px;
-    margin-left:49%;
+    margin:10px auto 0;
   }
   .text{
     width:100%;

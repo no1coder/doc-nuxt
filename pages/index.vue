@@ -90,6 +90,8 @@
       </div>
 
     </div>
+<button @click="qq">123123</button>
+
      <!-- 分类榜单 -->
       <div class="bgcol classlist">
         <PostClassList/>
@@ -103,14 +105,20 @@
       <PostTabBar/>
 
     </div>
-
   </div>
 </div>    
 
   
 </template>
 
-<script >
+<script setup>
+
+
+const qq = ()=>{
+f.get('/api/book_categories').then(res=>{
+  console.log(res,22222);
+})
+}
 
 
 
