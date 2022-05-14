@@ -47,7 +47,7 @@
 
         <!-- 搜索栏 -->
         <div class="topbgcol">
-          <PostSearchDemo class=" max-w-screen-xl mx-auto topbgcol"/>
+          <PostSearchDemo class="max-w-screen-xl mx-auto topbgcol" :masklayer1="masklayer1"/>
         </div>
         
 
