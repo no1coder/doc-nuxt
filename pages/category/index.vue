@@ -40,18 +40,10 @@
       <div class="bg-stone-900">
         <div class="container m-auto min-h-screen">
           <CategoriesAnchor :obj="category"/>
-          <div>
-            <CategoriesCard />
-            <CategoriesCard/>
-            <CategoriesCard/>
-            <CategoriesCard/>
-            <CategoriesCard/>
-            <CategoriesCard/>
-            <CategoriesCard/>
-            <CategoriesCard/>
-            <CategoriesCard/>
-          </div>
-
+          <CategoriesCard/>
+          <CategoriesCard/>
+          <CategoriesCard/>
+          <CategoriesCard/>
         </div>
       </div>
 
