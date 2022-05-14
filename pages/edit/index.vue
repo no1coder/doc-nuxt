@@ -45,7 +45,6 @@ export default defineComponent({
     tokenizer(text: string) {
       const reg = /^@([^@]*)@/;
       const match = reg.exec(text);
-
       if (match) {
         const token = {
           type: 'MarkExtension',
@@ -53,14 +52,11 @@ export default defineComponent({
           text: match[1].trim(),
           tokens: []
         };
-
         return token;
       }},
     renderer(token: any) {
       return `<mark>${token.text}</mark>`;
     },
-
-
 
     sanitize(html) { return sanitizeHtml(html) },
     onGetCatalog(list) {
