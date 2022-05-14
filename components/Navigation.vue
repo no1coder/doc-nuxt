@@ -1,9 +1,14 @@
 <template>
-  <div class="flex  justify-between container mx-auto text-sm p-1 mt-10" >
+  <div class="flex  justify-between  " >
 <!--    左-->
     <div class="left flex items-center space-x-4">
           <div>
-                <img src="assets/images/头像.jpeg" alt="" class="rounded-full">
+
+            <n-avatar
+                round
+                size="small"
+                src="assets/images/头像.jpeg"
+            />
           </div>
           <div>
                 <a class="text-slate-500 font-mono  cursor-pointer">褒浮<i>/</i></a>
@@ -30,135 +35,141 @@
     </div>
 <!--  右-->
     <div class="right flex item-center space-x-4  ">
-          <div>
-                  <n-popover trigger="hover" :delay="500" :duration="500">
-                  <template #trigger>
-                    <n-button class="border border-slate-600 rounded-md hover:border-solid hover:bg-white hover:text-lime-500 hover:border-lime-500 px-2">分享</n-button>
-                  </template>
-                  <span>分享</span>
-                  </n-popover>
-          </div>
-          <div>
-                  <n-dropdown :options="User">
-                  <n-button class="border-slate-600 rounded-md bg-emerald-500 border-8a8a8a text-white cursor-pointer hover:bg-emerald-400 px-6">新建</n-button>
-                  </n-dropdown>
-          </div>
-          <div>
-                <n-dropdown trigger="hover" :options="options" @select="handleSelect">
-                      <n-button >
-                        <a class="hover:bg-slate-200 w-8 cursor-pointer mt-1 ">
-                        <svg class="" style="width: 20px; min-width: 20px; height: 20px;">
-                          <use xlink:href="#more-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" id="more-circle"><g fill="none" fill-rule="evenodd"><path d="M74 113c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15Zm54 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15Zm54 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15Z" fill="currentColor" fill-rule="nonzero"></path><circle stroke="currentColor" stroke-width="18" cx="128" cy="128" r="103"></circle></g></svg>
-                          </use>
-                        </svg>
-                      </a>
+          <div >
+              <n-popover
+                  :show="showPopover"
+                  placement="bottom"
+                  trigger="manual"
+              >
+                <template #trigger>
+                  <n-button @click="showPopover = !showPopover " >
+                    分享
+                  </n-button>
+                </template>
+<!--                <span>-->
+<!--                    <span class="flex justify-between">-->
+<!--                        <span>公开分享 </span>-->
+<!--                        <span> <n-switch-->
+<!--                            checked-value=""-->
+<!--                            unchecked-value=""-->
+<!--                            @update:value="handleUpdateValue"-->
+<!--                        /></span>-->
+<!--                    </span>-->
+<!--                    <br/>开启后，所有获得链接的人皆可访问。分享内容需符合相关法-->
+<!--                    <br/>律法规及语雀<i class="text-blue-600/75">服务协议</i> 约定。-->
+<!--                </span>-->
+                <span class="max-w-sm " >
+
+                  <span>
+                      <span class="flex justify-between pt-6 max-w-sm">
+                            <span>公开分享 </span>
+                            <span> <n-switch
+                                checked-value="设置成功"
+                                unchecked-value="设置成功"
+                                v-model:value="show"
+                            /></span>
+                        </span>
+                  </span>
+
+                    <span class=" my-2">
+                       内容已转为公开，所有获得链接的人皆可访问。分享内容需符合相<br/>
+                       关法律法规及语雀<i class="text-blue-600/75">服务协议</i> 约定。
+                    </span>
+
+                    <span class="flex justify-between max-w-sm pt-4">
+                        <n-input autosize style="min-width: 50%"
+                                 type="textarea"
+                                 size="small"
+                                 placeholder="https://www.yuque.com/books/share/5eca29"
+                                 :disabled="!active"
+                                 round
+                        />
+                      <n-button @click="handleClick" >
+                          复制链接
                       </n-button>
-                </n-dropdown>
+                    </span>
+                      <a class="pt-2 pb-2 ">链接有效期至 2022-05-16 11:17:19</a>
+
+               <n-collapse>
+                <n-collapse-item title="更多设置"  name="1">
+                  <div>
+                     <span class="flex justify-between pt-4">
+                        <span >密码访问 </span>
+                        <span > <n-switch
+                            checked-value="设置成功"
+                            unchecked-value="设置成功"
+                            v-model:value="show"
+                        /></span>
+
+                    </span>
+
+                      <div class="pt-4">
+                        密码：zg46
+                        重置密码
+                      </div>
+
+
+                     <div class="pt-4 flex justify-between pt-4 ">
+                       <div>
+                            <span class="text-neutral-400"> 链接永远有效</span>
+                             <span class="text-blue-600/75"> 升级会员</span>
+                       </div>
+
+                        <n-switch v-model:value="active"  />
+                      </div>
+                  </div>
+                  <n-divider class="pt-4" />
+                </n-collapse-item>
+                  <div class="flex justify-around pt-4">
+                                     <n-image
+                                         width="100"
+                                         src="assets/images/336f002c8bc5a058fb2f20ed31b18a17_Wut80KFOjNAtf8WQUK9Fm9622zAn8B6PtbAojexywAAAAASUVORK5CYII=.png"
+                                         preview-disabled
+                                     />
+
+                                 <div class="my-8"> 使用微信、钉钉扫码分享当前链接</div>
+                                  </div>
+              </n-collapse>
+                </span>
+              </n-popover>
           </div>
 
-      <template>
-        <n-dropdown
-            :options="options"
-            placement="bottom-start"
-            trigger="click"
-            @select="handleSelect"
-        >
-          <n-button>人物和食物</n-button>
-        </n-dropdown>
-      </template>
     </div>
   </div><!--end nav-->
 </template>
 
 <script lang="ts" setup>
-import {
-  PersonCircleOutline as UserIcon,
-  Pencil as EditIcon,
-  LogOutOutline as LogoutIcon,
-  BuildSharp, CashOutline as CashIcon
-} from '@vicons/ionicons5'
-import { NIcon} from 'naive-ui'
-import type { Component } from 'vue'
-import {h} from "vue";
+import { defineComponent } from 'vue'
+import {NAlert, useMessage } from 'naive-ui'
+import { IosAirplane } from '@vicons/ionicons4'
+import type { MessageRenderMessage } from 'naive-ui'
+    // 开关
+    const  showPopover = ref(false);
+// 密码开关事件
+const show = ref(false)
+const active = ref(false)
+const handleUpdateShow = ()=>{
 
-const renderImg = (src) => {
-  return () => {
-    return h('img', {
-      src,
-      style:"width:20px;height:20px"
-    })
-  }
+
 }
-const User = [
-  {
-    label: '文档',
-    key: 'wd',
-    icon: renderImg('assets/images/wendang.svg')
 
-  },
-  {
-    label: '表格',
-    key: 'bg',
-    icon: renderImg('assets/images/biaoge(1).svg')
+    // 信息提示
+    const message = useMessage()
+    //显示信息和图标
+    const handleUpdateValue = (value) => {
+      show.value = !show.value
+      message.success(value)
+    }
 
-  },
-  {
-    label: '画板',
-    key: 'hb',
-    icon: renderImg('https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg')
+  // 复制链接消息提示
+    const { success } = useMessage()
+    function handleClick () {
+      success('链接复制成功')}
 
-  },
-  {
-    label: '数据表',
-    key: 'sjb',
-    icon: renderImg('https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg')
 
-  },
-  {
-    type: 'divider',
-    key: 'd1'
-  },
-  {
-    label: '从模板新建...',
-    key: 'mb',
-    icon: renderImg('https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg')
-
-  },
-  {
-    label: '导入',
-    key: 'dr',
-    icon: renderImg('https://07akioni.oss-cn-beijing.aliyuncs.com/07akioni.jpeg')
-
-  },
-]
-
-const  options = [
-  {
-    label: '文档',
-    key: "wd"
-  },
-  {
-    label: '表格',
-    key: 'bg'
-  },
-  {
-    label: '画板',
-    key: 'hb'
-  },
-  {
-    label: '数据表',
-    key: 'sjb'
-  },
-  {
-    label: '从模板新建',
-    key: 'mbxj'
-  },
-  {
-    label: '导入',
-    key: 'dr'
-  },
-]
+const handleSelect = (key: string | number) => {
+  message.info(String(key))
+}
 
 
 </script>
@@ -170,8 +181,10 @@ img{
   height: 28px;
 
 }
-.n-button{
+.n-input--stateful {
+  /* width: 400px!important; */
+}
+.n-button {
   --n-border: 1px solid rgba(224, 224, 230, 0) !important;
-  --n-border-hover: 1px solid rgba(54, 173, 106, 0) !important ;
 }
 </style>
