@@ -1,6 +1,6 @@
 <template>
 
- <div class="search ">
+ <div class="search max-w-screen-2xl">
     <img src="@/assets/post/logo.png"  class="logo center"/>
     <br/>
     <div class="searchBox">
@@ -36,7 +36,6 @@ const masklayer = () => {
 <style scoped lang="less">
 .search{
   text-align: center;
-  background-color:#1f2022;
   height:330px;
   padding-top:80px;
 
@@ -52,10 +51,10 @@ const masklayer = () => {
   position:relative;
     display: flex;
     justify-content:flex-start;
-    width:80%;
+    width:75%;
     height:52px;
     // background-color:rgba(238,240,244,.1);
-    background-color:white;
+    background-color:rgba(238,240,244,.1);
     margin:20px auto 0;
     border-radius:36px;
     }
@@ -82,14 +81,14 @@ input{
     
   }
  .searchBox-right{
-    background-image:url(https://weread-1258476243.file.myqcloud.com/web/wrwebnjlogic/image/search_return_white_2x.bc206fa4.png);
-    background-size: 100%;
     content: "";
     position: absolute;
     top: 10px;
     right: 10px;
     width: 32px;
     height: 32px;
+    background: url(https://weread-1258476243.file.myqcloud.com/web/wrwebnjlogic/image/search_return.0d4e04d8.png) no-repeat;
+    background-size: 100%;
      
   }
 

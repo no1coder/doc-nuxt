@@ -20,7 +20,7 @@ export default {
 .footer{
   color:grey;
   padding:35px 0 20px 0;
-  height:140px;
+  height:80px;
   text-align:center;
 
 }
