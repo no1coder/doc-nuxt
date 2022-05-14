@@ -1,35 +1,25 @@
 <template>
-	<n-button @click="showModal = true">
-		来吧
-	</n-button>
-	<n-modal v-model:show="showModal">
+	<n-modal v-model:show="showModal1">
 		<n-card
 			style="width: 600px"
-			title="模态框"
 			:bordered="false"
 			size="huge"
 			role="dialog"
 			aria-modal="true"
 		>
-			<template #header-extra>
-				噢！
-			</template>
-			内容
-			<template #footer>
-				尾部
-			</template>
+			<n-input />
 		</n-card>
 	</n-modal>
+	
+	
 </template>
 
-<script lang="ts">
-import { defineComponent, ref } from 'vue'
-
-export default defineComponent({
-	setup () {
-		return {
-			showModal: ref(false)
-		}
-	}
+<script lang="ts" setup>
+let props = defineProps({
+	showModal:Boolean
 })
+import {ref} from "vue";
+let showModal1 = ref()
+// showModal.value = true
+showModal1.value = props.showModal
 </script>

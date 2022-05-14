@@ -5,26 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd002365-f7a6-4dcd-9e3b-9592b17b1d68" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/components/catalogue/Header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/catalogue/Item-sub.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/catalogue/Item.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/catalogue/Nested.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/mac.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/搜索.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Content.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Header.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Item-sub.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Item.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Nested.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Row.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Row.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Search.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/read/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/read/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/web/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/catalogue/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/catalogue/Content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Content.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/catalogue/NewlyBuild.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/NewlyBuild.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/catalogue/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Search.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +25,31 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="zcq" />
+                    <option name="lastUsedInstant" value="1652507765" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1652507764" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -75,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1652404968552</updated>
       <workItem from="1652404975171" duration="31227000" />
-      <workItem from="1652493853920" duration="11323000" />
+      <workItem from="1652493853920" duration="15336000" />
     </task>
     <servers />
   </component>
