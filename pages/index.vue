@@ -1,5 +1,4 @@
 <template>
-
 <!--  遮罩层样式 -->
   <div class="mask_layer" v-show="!mask_layer" @click="masklayer_hide">
     <button class="search_close" ></button>
@@ -13,7 +12,6 @@
       </div>
     </div>
   </div>
-
 <div class="Home m-0 p-0 ">
     <div class="w-full">
       <div class="home ">
