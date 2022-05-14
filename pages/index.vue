@@ -1,6 +1,5 @@
 <template>
 <div class="Home m-0 p-0 ">
-     
     <div class="w-full">
       <div class="home ">
 
@@ -30,7 +29,7 @@
                 <div class="spana">微信读书用户近期热度的出版书</div>
               </div>
               <div class="bookCardL grid  grid-cols-1 sm:grid-cols-2">
-                <PostBookCard @click=(qq) /><PostBookCard/><PostBookCard/>
+                <PostBookCard v-bind="book"/><PostBookCard/><PostBookCard/>
                 <PostBookCard/><PostBookCard/><PostBookCard/>
               </div>
               <div class="cheekAll">
@@ -46,7 +45,7 @@
                 <div class="spanb">最近90天出版的热门书籍</div>
               </div>
               <div class="bookCardR grid  grid-cols-1 sm:grid-cols-2">
-                <PostBookCard/><PostBookCard/><PostBookCard/>
+                <PostBookCard /><PostBookCard/><PostBookCard/>
               <PostBookCard/><PostBookCard/><PostBookCard/>
               
               </div>
@@ -104,7 +103,7 @@
         </div>
 
         <!-- 底部备案编号 -->
-        <div class="btbgcol w-full" @click=(qq)>
+        <div class="btbgcol w-full">
           <PostFooterBank class="max-w-screen-xl  mx-auto"/>
         </div>
 
@@ -124,11 +123,9 @@
 <script setup>
 
 
-const qq = ()=>{
-f.get('/api/book').then(res=>{
-  console.log(res,22222);
+f.get('/api/book_categories').then(res=>{
+  let book =res;
 })
-}
 
 
 </script>

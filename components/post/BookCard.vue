@@ -18,12 +18,10 @@
 <script setup>
 
 
+// f.get('/api/book').then(res=>{
+//   console.log(res,22222);
+//  })
 
-const qq = ()=>{
-f.get('/api/book').then(res=>{
-  console.log(res,22222);
- })
-}
 
 
 // card.mouseover(function(){

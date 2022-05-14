@@ -37,7 +37,7 @@
   position:relative;
     display: flex;
     justify-content:flex-start;
-    width:80%;
+    width:75%;
     height:52px;
     // background-color:rgba(238,240,244,.1);
     background-color:rgba(238,240,244,.1);
