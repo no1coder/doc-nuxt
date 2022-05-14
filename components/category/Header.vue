@@ -18,13 +18,23 @@
     </div>
 </template>
 
-<script lang="ts" setup>
+
+
+<script setup>
+
+
+
+
+
+
 
 </script>
 
 <style>
-/* .url{
-    background:url('../../assets/images/veer-141544254.jpg') no-repeat;
-    background-size: 100% 100%;
-} */
+
+
+
+
+
+
 </style>

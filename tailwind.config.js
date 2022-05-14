@@ -1,5 +1,6 @@
 const colors = require('tailwindcss/colors')
 module.exports = {
+  darkMode: 'class',
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -28,15 +29,15 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
-    colors: {
-      // Build your palette here
-      transparent: 'transparent',
-      current: 'currentColor',
-      gray: colors.trueGray,
-      red: colors.red,
-      blue: colors.sky,
-      yellow: colors.amber,
-    }
+    // colors: {
+    //   // Build your palette here
+    //   transparent: 'transparent',
+    //   current: 'currentColor',
+    //   gray: colors.trueGray,
+    //   red: colors.red,
+    //   blue: colors.sky,
+    //   yellow: colors.amber,
+    // }
   },
   plugins: [],
 };
