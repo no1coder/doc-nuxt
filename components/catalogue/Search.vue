@@ -14,9 +14,8 @@
             </div>
         </div>
         <div class="w-1/3 h-9 flex justify-end">
-            <input type="text" class="border w-2/3 h-full search pl-10 rounded-md md:mr-[4%] lg:mr-[6%] " placeholder="输入标题进行搜索">
-			<n-dropdown trigger="click" :options="data" @select="handleSelect"  placement="bottom-end" class="w-36">
-				<button class="text-white bg-green-500 w-20 h-full rounded-sm">新建</button>
+			<n-dropdown trigger="click" :options="data"  placement="bottom-end" class="w-36">
+				<button class="text-white bg-green-500 w-20 h-full rounded" @click="SubclassCreation('212121')">新建</button>
 			</n-dropdown>
         </div>
     </div>
@@ -25,16 +24,26 @@
 </template>
 
 <script setup lang="ts">
-import {h} from 'vue'
+import {h, onMounted} from 'vue'
+let props = defineProps({
+	ParentClassNew:Function
+})
+//点击新建按钮
+const SubclassCreation = (obj) => {
+	props.ParentClassNew(obj)
+}
+
+
 
 const renderImg = (src) => {
 	return () => {
 		return h('img',{
 			src,
-			style:'width:10px;height:20px'
+			style:'width:15px;height:25px'
 		})
 	}
 }
+
 
 const data = [
 	{
@@ -53,16 +62,13 @@ const data = [
 		icon:renderImg('assets/images/链接.svg')
 	},
 ];
-const handleSelect = (key: string | number) => {
-	
-	}
+
 
 </script>
 
-<style>
+<style lang="less" scoped>
 .search{
-    background: url('../../assets/images/search.png') no-repeat;
+    background: url('../../assets/images/search.svg') no-repeat 12px 9px;
     background-size: 20px 20px;
-    background-position: 12px 9px;
 }
 </style>

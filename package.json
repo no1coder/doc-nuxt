@@ -21,6 +21,6 @@
     "md-editor-v3": "^1.11.12",
     "pinia": "^2.0.14",
     "sanitize-html": "^2.7.0",
-    "vuedraggable": "^2.24.3"
+    "vuedraggable": "^4.1.0"
   }
 }

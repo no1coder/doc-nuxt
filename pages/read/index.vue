@@ -22,9 +22,6 @@
   height:1000px;
   width:200px
 }
-.container{
-  max-width:850px;
-  margin:0 auto;
-}
+
 
 </style>
