@@ -1,8 +1,9 @@
 <template>
-  <div class="flex">
-    <div class="read_left lg:h-full lg:block xs:hidden relative" >
+  <div class="flex w-full">
+    <div class="read_left hidden lg:block relative" >
       <DocumentReadLeftCatalog></DocumentReadLeftCatalog>
     </div>
+
     <div class="flex-auto">
         <DocumentReadrightRight></DocumentReadrightRight>
     </div>
@@ -14,17 +15,14 @@
 
 </script>
 
-<style >
+<style scoped>
 .read_left{
-  width:300px;
+  width:22%;
 }
 .cheng{
   height:1000px;
   width:200px
 }
-.container{
-  max-width:850px;
-  margin:0 auto;
-}
+
 
 </style>
