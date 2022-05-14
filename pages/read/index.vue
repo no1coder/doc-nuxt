@@ -14,7 +14,7 @@
 
 </script>
 
-<style >
+<style scoped>
 .read_left{
   width:300px;
 }

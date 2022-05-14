@@ -1,33 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/components/category/Row.vue" afterDir="false" />
+    <list default="true" id="ae2514af-b3f5-42b1-a837-4107af682e3b" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/24gf-ellipsisVertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/search.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/veer-132547819.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/veer-141544254.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/分组管理.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/加号.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/展开菜单.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/折叠.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/文档.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/方向-向左.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/编辑器 · 添加链接.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/选择器展开.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/问号.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Content.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Item-sub.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Item-sub.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Item.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Nested.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Nested.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Search.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/raw.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/web/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/web/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Categories/Anchor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Categories/Anchor.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Categories/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Categories/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/category/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/read/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/read/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript File" />
         <option value="Vue Single File Component" />
       </list>
     </option>
@@ -53,12 +36,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="zcq" />
-                    <option name="lastUsedInstant" value="1652090323" />
-                  </RecentBranch>
-                  <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1652090322" />
+                    <option name="lastUsedInstant" value="1652338802" />
                   </RecentBranch>
                 </list>
               </option>
@@ -72,7 +51,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="28uvok9o9JNUNsJLlTJcIzoL4xQ" />
+  <component name="ProjectId" id="28m10CKCQPfLe2uTBXCU7pq77Mb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -82,42 +61,61 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mac/doc-nuxt/composables&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MTConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm 2021.3.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/composables" />
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/plugins/category" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="" />
-      <created>1652079461981</created>
+      <changelist id="ae2514af-b3f5-42b1-a837-4107af682e3b" name="变更" comment="" />
+      <created>1651806722029</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1652079461981</updated>
-      <workItem from="1652079473017" duration="27098000" />
-      <workItem from="1652232183908" duration="30039000" />
-      <workItem from="1652319339707" duration="5934000" />
+      <updated>1651806722029</updated>
+      <workItem from="1651806724286" duration="59106000" />
+      <workItem from="1652079592334" duration="51000" />
+      <workItem from="1652079763904" duration="23915000" />
+      <workItem from="1652169695650" duration="18345000" />
+      <workItem from="1652258658847" duration="6909000" />
+      <workItem from="1652321732614" duration="1731000" />
+      <workItem from="1652325391419" duration="91000" />
+      <workItem from="1652325508481" duration="5599000" />
+      <workItem from="1652338867719" duration="22247000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/components/category/Content.vue</url>
-          <line>103</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
