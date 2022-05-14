@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="w-full h-16 head"><h1 class="p-4">发布文章</h1></div>
+  <div class="w-full h-16 heads theme"><h1 class="p-4 theme">发布文章</h1></div>
 </div>
 </template>
 
@@ -11,12 +11,12 @@ export default {
 </script>
 
 <style scoped>
-.head{
+.heads{
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ccc;
 }
-.head>h1{
+.heads>h1{
 
   font-weight: 500;
   font-size: 18px;

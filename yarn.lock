@@ -2694,9 +2694,9 @@ hasha@^5.2.2:
     is-stream "^2.0.0"
     type-fest "^0.8.0"
 
-highlight.js@^11.5.0:
+highlight.js@^11.5.0, highlight.js@^11.5.1:
   version "11.5.1"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.5.1.tgz#027c24e4509e2f4dcd00b4a6dda542ce0a1f7aea"
+  resolved "https://registry.npmjs.org/highlight.js/-/highlight.js-11.5.1.tgz#027c24e4509e2f4dcd00b4a6dda542ce0a1f7aea"
   integrity sha512-LKzHqnxr4CrD2YsNoIf/o5nJ09j4yi/GcH5BnYz9UnVpZdS4ucMgvP61TDty5xJcFGRjnH4DpujkS9bHT3hq0Q==
 
 hookable@^5.1.1:
@@ -4960,6 +4960,11 @@ schema-utils@^3.0.0:
     "@types/json-schema" "^7.0.8"
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
+
+screenfull@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/screenfull/-/screenfull-6.0.1.tgz#3b71e6f06b72d817a8d3be73c45ebe71fa8da1ce"
+  integrity sha512-yzQW+j4zMUBQC51xxWaoDYjxOtl8Kn+xvue3p6v/fv2pIi1jH4AldgVLU8TBfFVgH2x3VXlf3+YiA/AYIPlaew==
 
 scule@^0.2.1:
   version "0.2.1"

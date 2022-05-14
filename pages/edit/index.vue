@@ -1,40 +1,67 @@
 <template>
-<div>
   <div>
-    <Title></Title>
-  </div>
+    <div>
+      <Title></Title>
+    </div>
     <div>
       <md-editor v-model="text"
-                 :language="language"
-                 :languageUserDefined="languageUserDefined"
                  :marked-heading="markedHeading"
-                 @onGetCatalog="onGetCatalog"
-                 :sanitize="sanitize"
+                  @onGetCatalog="onGetCatalog"
                  :toolbars="toolbars"
+                 theme="dark"
+                 :screenfull="screenfull"
+                 previewTheme="vuepress"
+                 :extensions="[MarkExtension]"
       />
     </div>
 
 
-</div>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
 import MdEditor from 'md-editor-v3';
 import 'md-editor-v3/lib/style.css';
-import sanitizeHtml from 'sanitize-html';
 
-
-
+import MarkExtension from '@/util/marked-mark';
+import hljs from 'highlight.js';
+import 'highlight.js/styles/github.css';
+import screenfull from 'screenfull';
+console.log(MarkExtension)
 export default defineComponent({
+
   components: { MdEditor },
   data(){
     return{
+      theme:"vuepress-dark",
+      level: 'inline',
+      start: (text: string) => text.match(/@[^@]/)?.index,
       catalogList: [],
       toolbars: ['bold','underline', 'italic','strikeThrough', '-','title','sub','sup','quote','unorderedList','orderedList','-','codeRow','code','link','image','table','mermaid','katex','-','revoke','next','save', '=', 'prettier','pageFullscreen','fullscreen','preview','catalog']
     }
   },
   methods:{
+    tokenizer(text: string) {
+      const reg = /^@([^@]*)@/;
+      const match = reg.exec(text);
+
+      if (match) {
+        const token = {
+          type: 'MarkExtension',
+          raw: match[0],
+          text: match[1].trim(),
+          tokens: []
+        };
+
+        return token;
+      }},
+    renderer(token: any) {
+      return `<mark>${token.text}</mark>`;
+    },
+
+
+
     sanitize(html) { return sanitizeHtml(html) },
     onGetCatalog(list) {
       this.catalogList = list
@@ -61,13 +88,36 @@ export default defineComponent({
   setup () {
     const text = ref('')
 
+    const MarkExtension = {
+      name: 'MarkExtension',
+      level: 'inline',
+      start: (text: string) => text.match(/@[^@]/)?.index,
+      tokenizer(text: string) {
+        const reg = /^@([^@]*)@/;
+        const match = reg.exec(text);
+
+        if (match) {
+          const token = {
+            type: 'MarkExtension',
+            raw: match[0],
+            text: match[1].trim(),
+            tokens: []
+          };
+
+          return token;
+        }
+      },
+      renderer(token: any) {
+        return `<mark>${token.text}</mark>`;
+      }
+    };
 
     return {
+      MarkExtension:MarkExtension,
       ts1: ref(null),
       ts2: ref(1183135260000),
       range1: ref(null),
       range2: ref(null),
-      theme:'dark',
       text:text,
       language: 'my-lang',
       languageUserDefined: {
