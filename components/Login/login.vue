@@ -1,10 +1,9 @@
 <template>
 
-  <n-button @click="showModal = true">
+  <span @click="showModal = true">
     登录
-  </n-button>
-  <button @click="logoutHeader">退出登录</button>
-  <n-modal v-model:show="showModal">
+  </span>
+  <n-modal v-model:show="showModal" style="background:#f8fcff" >
     <n-card class="modalBox rounded-lg "
             :bordered="false"
             size="huge"
@@ -41,7 +40,7 @@
             <div class="text-right text-sm text-slate-400 ForgetPassword w-400"  >
               <n-checkbox v-model:checked="disabled2" class="followingText">
                   <span class="text-slate-400 hover:text-black">
-                    七天内自动登录
+                    同意隐私政策
                   </span>
               </n-checkbox>
 
@@ -101,7 +100,7 @@
             <div class="text-right text-sm text-slate-400 w-400"  >
               <n-checkbox v-model:checked="disabled2" class="followingText2" >
                   <span class="text-slate-400 hover:text-black">
-                    七天内自动登录
+                    同意隐私政策
                   </span>
               </n-checkbox>
 
@@ -174,13 +173,19 @@
 
           <!-- 账号下面的文字-->
           <div class="text-right text-sm text-slate-400 w-400"  >
-            <n-checkbox v-model:checked="disabled2" class="followingText3" >
-                  <span class="text-slate-400 hover:text-black">
+<!--            <n-checkbox v-model:checked="disabled2" class="followingText3" >-->
+<!--                  <span class="text-slate-400 hover:text-black">-->
+<!--                    同意隐私政策-->
+<!--                  </span>-->
+<!--            </n-checkbox>-->
+<!--            <n-form-item path="disabled3">-->
+            <n-checkbox v-model:checked="disabled2" class="followingText3">
+                <n-space class="text-slate-400 hover:text-black">
                     同意隐私政策
-                  </span>
-            </n-checkbox>
-
-            <span  class="cursor-pointer hover:text-black mr-14" @click="forget_password">找回账号</span>
+                </n-space>
+              </n-checkbox>
+<!--            </n-form-item>-->
+                        <span  class="cursor-pointer hover:text-black mr-14" @click="forget_password">找回账号</span>
           </div>
         </n-form>
         <!-- 登录按钮-->
@@ -282,7 +287,6 @@ import  {useUserStore} from '/stores/userStore'
 
 
 let showModal = ref(false)      // 显示弹框
-let disabled2 = ref(null)       // 选中复选框
 
 let register1 = ref(true)       // 注册页面显示
 let register2 = ref(true)       // 忘记页面显示
@@ -292,6 +296,7 @@ let countdown = ref(false);     // 隐藏发送验证码倒计时
 
 let seconds_login = ref(60)     // 手机登录验证码秒数
 let countdown_login = ref(false);     // 手机登录隐藏发送验证码倒计时
+let disabled2 = ref(true)       // 选中复选框
 
 
 // 参数模型
@@ -300,6 +305,7 @@ let form = reactive({
   password:undefined,
   phone:"",
   code: undefined,
+
 })
 
 
@@ -391,6 +397,12 @@ const register_rules = {
         message: "请输入验证码",
         trigger: ["input", "blur"]
       },
+  disabled3: {
+    type: "array",
+    required: true,
+    trigger: ["change"],
+    message: "请选择 同意协议"
+  },
 }
 
 
@@ -551,13 +563,37 @@ const register_Code1 = () =>{
 
 
 // 注册账号提交按钮
-const fastRegistration = () => {
-  f.post('/api/auth/register',form).then(res=>{
-    setLoginToken(res.token)      // 保存token
+const fastRegistration = (e) => {
+  e.preventDefault();
+  form.value?.validate((errors) => {
+    if (!errors) {
+      console.log('已选中')
+      f.post('/api/auth/register', form).then(res => {
+        setLoginToken(res.token)      // 保存token
 
-    console.log(res,'全局提示消息注册账号提交成功')
+        console.log(res, '全局提示消息注册账号提交成功')
+      }).catch(err => {
+        console.log(err, '全局提示注册账号错误')
+      })
+    } else {
+      console.log('未选中同意协议效果')
+      console.log(errors);
+
+    }
   })
 }
+
+// const handleValidateButtonClick = (e) => {
+//   e.preventDefault();
+//   form.value?.validate((errors) => {
+//     if (!errors) {
+//       console.log('123123')
+//     } else {
+//       console.log('失败')
+//       console.log(errors);
+//     }
+//   });
+// }
 
 
 
@@ -601,8 +637,10 @@ const retrieve_id = () => {
     setLoginToken(res.token)      // 保存token
 
     console.log(res,'全局提示消息忘记账号提交成功')
+  }).catch(err=>{
+    console.log(err,'验证码错误')
+
   })
-  console.log('验证码错误')
 }
 
 
@@ -659,25 +697,6 @@ const setLoginToken = (token)=>{
 }
 
 
-
-// 退出登录
-const userStore = useUserStore();                 // 获取用户信息  和token
-const userInfo = await userStore.getUserInfo
-const logoutHeader = ()=>{
-  console.log(123123,'点击退出登录==>>',userStore.token)
-  if (userStore.token){
-    logout()
-    //将token设置为空
-    console.log('全局提示消息退出成功');
-  }else{
-    console.log('全局提示消息退出失败');
-  }
-}
-
-
-
-
-
 </script>
 
 
@@ -706,10 +725,10 @@ const logoutHeader = ()=>{
 }
 
 .followingText{
-  margin-right: 70px
+  margin-right: 80px
 }
 .followingText2{
-  margin-right: 137px
+  margin-right: 147px
 }
 .followingText3{
   margin-right: 150px

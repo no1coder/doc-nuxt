@@ -5,7 +5,7 @@
     <br/>
     <div class="searchBox">
       <span class="searchBox-left"></span>
-      <input type='text' placeholder="搜索"/>
+      <input type='text' placeholder="搜索" @click="masklayer"/>
       <span class="searchBox-right"></span>
     </div>
     
@@ -14,7 +14,21 @@
    
 </template>
 
-<script>
+<script setup>
+
+import {ref} from "vue";
+ const props = defineProps({
+   masklayer1:
+       {
+         type:Function
+       }
+})
+
+// 遮罩层显示隐藏效果
+const masklayer = () => {
+  props.masklayer1(false)       // 调取父组件传输的方法进行返回值使用
+  console.log('遮罩层开启子',props.masklayer1)
+}
 
 </script>
 

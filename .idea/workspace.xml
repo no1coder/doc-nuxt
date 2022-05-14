@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/components/Document/Tan/MoreU.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -14,6 +15,16 @@
       <change beforePath="$PROJECT_DIR$/components/Document/Tan/Pop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Tan/Pop.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/readright/right.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/readright/right.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/right/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/right/List.vue" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.env.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Login/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Login/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/category/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/post/SearchDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/post/SearchDemo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/post/TabBar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+>>>>>>> origin/zqq
       <change beforePath="$PROJECT_DIR$/pages/read/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/read/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
@@ -31,6 +42,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
@@ -75,6 +94,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/components/Document" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -90,6 +110,13 @@
       <recent name="D:\subject\doc-nuxt\components\Document" />
     </key>
   </component>
+=======
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="D:\WebStorm 2021.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+    <property name="vuejs.nuxt.types-notification-shown" value="true" />
+  </component>
+>>>>>>> origin/zqq
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -101,11 +128,16 @@
       <workItem from="1652079473017" duration="27098000" />
       <workItem from="1652232183908" duration="30039000" />
       <workItem from="1652319339707" duration="5934000" />
+<<<<<<< HEAD
       <workItem from="1652352870520" duration="1072000" />
       <workItem from="1652404469770" duration="6216000" />
       <workItem from="1652413084033" duration="4813000" />
       <workItem from="1652423022978" duration="18948000" />
       <workItem from="1652493100271" duration="13551000" />
+=======
+      <workItem from="1652343258347" duration="5467000" />
+      <workItem from="1652407743431" duration="39112000" />
+>>>>>>> origin/zqq
     </task>
     <servers />
   </component>
@@ -122,7 +154,10 @@
         </entry>
       </map>
     </option>
+<<<<<<< HEAD
     <option name="oldMeFiltersMigrated" value="true" />
+=======
+>>>>>>> origin/zqq
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -131,6 +166,12 @@
           <url>file://$PROJECT_DIR$/components/category/Content.vue</url>
           <line>103</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/Login/login.vue</url>
+          <line>399</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
