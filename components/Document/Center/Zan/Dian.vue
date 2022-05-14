@@ -13,7 +13,7 @@
         <DocumentTanPop :obj="items"></DocumentTanPop>
       </li>
       <li>
-        <img src="~assets/images/icon/shenglue.svg" class="border-2" alt="">
+       <DocumentTanMoreU></DocumentTanMoreU>
       </li>
     </ul>
   </div>

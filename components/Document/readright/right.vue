@@ -6,11 +6,12 @@
     <div class="flex-auto">
       <DocumentCenterArticle></DocumentCenterArticle>
     </div>
-    <div class="right-list relative lg:block xs:hidden">
+    <div class="right-list relative lg:block hidden">
       <DocumentRightList></DocumentRightList>
     </div>
   </div>
   <div class="fixed right-6 bottom-8 h-auto w-auto">
+    <DocumentFixiconHuiDing class="mt-4"></DocumentFixiconHuiDing>
     <DocumentFixiconZan class="mt-4"></DocumentFixiconZan>
     <DocumentFixiconQipao class="mt-4"></DocumentFixiconQipao>
     <DocumentFixiconMobile class="mt-4"></DocumentFixiconMobile>
