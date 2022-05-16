@@ -1,12 +1,8 @@
 <template>
   <div class="w-full box-border ">
     <n-message-provider>
-      <div class="pt-10   lg:mx-auto  lg:container  ">
         <Navigation >
-
         </Navigation>
-      </div>
-
       <!--  上-->
       <Center >
         <div class="one"></div>
