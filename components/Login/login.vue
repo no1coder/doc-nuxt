@@ -458,7 +458,6 @@ const common = {
 
 
 
-
 // 用户登录
 const usersLogin = () =>{
   if (form) {
@@ -466,7 +465,6 @@ const usersLogin = () =>{
       console.log(res,'API登录成功')
       // 保存当前用户的token
       setLoginToken(res.token)
-
     }).catch(err => {
       console.log(err,'全局提示消息账号或密码错误')
     })
@@ -530,7 +528,7 @@ const phoneCode1 = () =>{
 
 
 
-// 手机发送注册验证码
+// 手机发送注册验证码    13966539890
 const register_Code = () =>{
     console.log('注册验证码')
   if ((/^1[3456789]\d{9}$/.test(form.phone))) {
@@ -562,44 +560,31 @@ const register_Code1 = () =>{
 }
 
 
-// 注册账号提交按钮
+// 注册账号提交按钮   13839063614
 const fastRegistration = (e) => {
-  e.preventDefault();
-  form.value?.validate((errors) => {
-    if (!errors) {
-      console.log('已选中')
+  console.log(123213)
+  // e.preventDefault();
+  // form.value?.validate((errors) => {
+  //   if (!errors) {
+  //     console.log('已选中')
       f.post('/api/auth/register', form).then(res => {
         setLoginToken(res.token)      // 保存token
 
         console.log(res, '全局提示消息注册账号提交成功')
       }).catch(err => {
-        console.log(err, '全局提示注册账号错误')
+        console.log(err, '全局提示注册账号数据错误或不全')
       })
-    } else {
-      console.log('未选中同意协议效果')
-      console.log(errors);
-
-    }
-  })
+    // } else {
+    //   console.log('未选中同意协议效果')
+    //   console.log(errors);
+    // }
+  // })
 }
 
-// const handleValidateButtonClick = (e) => {
-//   e.preventDefault();
-//   form.value?.validate((errors) => {
-//     if (!errors) {
-//       console.log('123123')
-//     } else {
-//       console.log('失败')
-//       console.log(errors);
-//     }
-//   });
-// }
 
 
 
-
-
-// 忘记密码发送验证码   13966539890
+// 忘记密码发送验证码
 const revealLog_Code = () =>{
   console.log('忘记账号验证码')
   if ((/^1[3456789]\d{9}$/.test(form.phone))) {
@@ -637,6 +622,14 @@ const retrieve_id = () => {
     setLoginToken(res.token)      // 保存token
 
     console.log(res,'全局提示消息忘记账号提交成功')
+
+
+     form = reactive({
+      username: undefined,
+      password:undefined,
+      phone:"",
+      code: undefined,
+    })
   }).catch(err=>{
     console.log(err,'验证码错误')
 

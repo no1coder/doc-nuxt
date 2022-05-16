@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Login/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Login/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/category/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/category/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/post/SearchDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/post/SearchDemo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/post/TabBar.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/read/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/read/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-    </list>
+    <list default="true" id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +82,7 @@
       <workItem from="1652232183908" duration="30039000" />
       <workItem from="1652319339707" duration="5934000" />
       <workItem from="1652343258347" duration="5467000" />
-      <workItem from="1652407743431" duration="39112000" />
+      <workItem from="1652407743431" duration="39845000" />
     </task>
     <servers />
   </component>

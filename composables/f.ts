@@ -44,7 +44,8 @@ class baseFetch {
                 const router = useRouter()
                 error.message = '登录信息已过期，请登录'
                 if (!process.server && error.message) {
-                    message.error(error.message)
+                    // message.error(error.message)
+                    // console.log(error.message)
                 }
                 router.go(0)
                 break
