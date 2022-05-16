@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="76339ce6-95d2-4e3f-86a3-486362a96984" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/components/catalogue/CInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/CInput.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/catalogue/Content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Content.vue" afterDir="false" />
@@ -17,6 +18,9 @@
       <change beforePath="$PROJECT_DIR$/components/catalogue/Tree.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Tree.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/catalogue/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/catalogue/index.vue" afterDir="false" />
     </list>
+=======
+    <list default="true" id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="" />
+>>>>>>> origin/zqq
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,10 +59,19 @@
       <created>1652664064213</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1652664064213</updated>
       <workItem from="1652664079989" duration="3249000" />
       <workItem from="1652677555610" duration="9000" />
       <workItem from="1652677583232" duration="365000" />
+=======
+      <updated>1652079461981</updated>
+      <workItem from="1652079473017" duration="27098000" />
+      <workItem from="1652232183908" duration="30039000" />
+      <workItem from="1652319339707" duration="5934000" />
+      <workItem from="1652343258347" duration="5467000" />
+      <workItem from="1652407743431" duration="39845000" />
+>>>>>>> origin/zqq
     </task>
     <servers />
   </component>

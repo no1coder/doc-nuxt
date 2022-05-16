@@ -1,10 +1,10 @@
 <template>
-<!--  遮罩层样式 -->
+  <!--  遮罩层样式 -->
   <div class="mask_layer" v-show="!mask_layer" @click="masklayer_hide">
     <button class="search_close" ></button>
     <div class="" style="padding: 150px">
       <img src="@/assets/post/logo.png" style="margin:0 auto;"/>
-<!--      搜索框-->
+      <!--      搜索框-->
       <div class="search_string">
         <span class="searchBox-left"></span>
         <input class="outline-0 px-9 search_Box" id="search_Box1" type="text" placeholder="搜索"  @click.stop >
@@ -26,18 +26,17 @@
         <NuxtLink>手机版</NuxtLink> |
         <NuxtLink >微信听书</NuxtLink> |
 
-        <NuxtLink>
-          <login :showModal="true" v-if="!userStore.token">
-            登录
+        <NuxtLink class="cursor-pointer">
+          <login class="cursor-pointer" :showModal="true" v-if="!userStore.token">
           </login>
 
           <span v-show="userStore.token">
       <n-dropdown trigger="click" :options="options" @select="handleSelect">
         <span>用户资料</span>
       </n-dropdown>
-      </span>
-
+          </span>
         </NuxtLink>
+
       </div>
             </div>
           </div>  
@@ -146,8 +145,7 @@
         -->
       </div>
     </div>
-</div>  
->>>>>>> origin/main
+</div>
 
 </template>
 
@@ -156,12 +154,12 @@ import {ref} from "vue";
 import {useUserStore} from "../stores/userStore";
 import {logout} from "../util/util";
 
+
 let mask_layer  = ref(true);       // 遮罩层隐藏显示
 
-// 遮罩层显示隐藏效果
+// 遮罩层显示效果
 const masklayer1 = (e) => {
   mask_layer.value = e
-
   document.body.style="overflow: hidden;"                     // 关闭轮滑
   setTimeout(() =>{
     document.getElementById('search_Box1').focus();  // 自动焦点
@@ -169,7 +167,7 @@ const masklayer1 = (e) => {
   console.log(e,'遮罩层开启')
 }
 
-
+// 遮罩层隐藏效果
 const masklayer_hide = () =>{
   mask_layer.value = true;
   document.body.style="overflow: visible;"
@@ -190,7 +188,7 @@ const logoutHeader = ()=>{
     console.log('全局提示消息退出失败');
   }
 }
-console.log(userInfo,222222)
+
 
 // 登录后显示效果
 let options = [
