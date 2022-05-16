@@ -1,6 +1,6 @@
 <template>
   <div class="pt-[4.5rem] ml-0 lg:ml-48">
-    <h1 class="text-white">前端</h1>
+    <h1 class="text-white" :id="items.hash_id">{{items.name}}</h1>
     <div class="grid grid-cols-1 lg:grid-cols-2">
       <NuxtLink class="bg-gradient-to-r hover:from-black hover:to-stone-900">
         <div class="flex py-5 overflow-hidden items-center">
@@ -266,7 +266,12 @@
 </template>
 
 <script setup>
-
+let a = defineProps({
+  items:{
+    type:Object,
+    default:null
+  }
+})
 </script>
 
 <style scoped>
