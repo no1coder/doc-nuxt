@@ -1,5 +1,5 @@
 <template>
-  <div class="head">
+  <div class="head1">
   <div class="logo w-full h-16 border-2 text-black font-medium flex justify-center items-center">文档阅读</div>
   <div class="title my-2 px-5 flex justify-between items-center">
     <span>目录</span>

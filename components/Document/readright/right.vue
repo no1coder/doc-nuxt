@@ -28,6 +28,8 @@ export default {
 .right-list{
   min-width:180px;
   height:200px;
+  width:280px;
+  padding:0 20px;
 }
 
 </style>

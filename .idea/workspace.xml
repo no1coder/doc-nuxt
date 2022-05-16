@@ -5,17 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Document/Tan/MoreU.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Document/Center/Article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Article.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/Share/Xiang.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Share/Xiang.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/Center/Zan/Dian.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Zan/Dian.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/ReadLeft/Catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/ReadLeft/Catalog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Document/Tan/Pop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Tan/Pop.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/ReadLeft/Head.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/ReadLeft/Head.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Tan/MoreU.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Tan/MoreU.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/readright/right.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/readright/right.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/right/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/right/List.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/app.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/nuxt.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt-app/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/read/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/read/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +37,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GitToolBoxStore">
     <option name="recentBranches">
@@ -81,6 +95,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
     <property name="vuejs.nuxt.types-notification-shown" value="true" />
@@ -105,7 +120,9 @@
       <workItem from="1652404469770" duration="6216000" />
       <workItem from="1652413084033" duration="4813000" />
       <workItem from="1652423022978" duration="18948000" />
-      <workItem from="1652493100271" duration="13551000" />
+      <workItem from="1652493100271" duration="14667000" />
+      <workItem from="1652511737949" duration="4189000" />
+      <workItem from="1652663146099" duration="7618000" />
     </task>
     <servers />
   </component>

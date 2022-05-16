@@ -1,5 +1,5 @@
 <template>
-  <div style="height: 200px; padding-left: 50px" class="">
+  <div style="height: 200px; padding-left: 50px" class="list">
     <n-anchor
         ref="anchorRef"
         affix
@@ -46,7 +46,12 @@ export default defineComponent({
 
 <style scoped>
 .list{
-  min-width:150px;
-  height:200px;
+  width:100%;
+  padding:0!important;
+  font-size: 14px;
+}
+::v-deep(.n-anchor-link__title){
+  font-size:14px!important;
+  font-weight:bold
 }
 </style>
