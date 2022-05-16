@@ -117,4 +117,6 @@ class baseFetch {
 
 }
 
+
+
 export default new baseFetch();         // 将这里面的方法暴露出来

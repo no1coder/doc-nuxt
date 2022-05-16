@@ -24,6 +24,7 @@ import Navigation from "~/components/Navigation.vue";
 import Center from "~/components/Center.vue";
 import Catalogue from "~/components/Catalogue.vue";
 
+
 </script>
 
 <style scoped>

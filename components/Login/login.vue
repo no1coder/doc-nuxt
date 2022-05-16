@@ -568,7 +568,6 @@ const fastRegistration = (e) => {
   //   if (!errors) {
   //     console.log('已选中')
       f.post('/api/auth/register', form).then(res => {
-        setLoginToken(res.token)      // 保存token
 
         console.log(res, '全局提示消息注册账号提交成功')
       }).catch(err => {

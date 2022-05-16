@@ -200,7 +200,7 @@ export default defineComponent({
 
 </script>
 
-<style>
+<style scoped>
 .md{
   height: calc(100vh - 63px);
 }
