@@ -82,6 +82,7 @@ export default defineComponent({
     }
   },
   setup () {
+
     const text = ref('')
 
     const MarkExtension = {
@@ -202,5 +203,8 @@ export default defineComponent({
 <style>
 .md{
   height: calc(100vh - 63px);
+}
+body{
+  background: black;
 }
 </style>

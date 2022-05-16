@@ -12,7 +12,7 @@
           <div class="release-btn"><a> <Button-1></Button-1> </a></div>
 
           <div>
-            <div class="login-header"></div>
+            <div class="login-header">登录</div>
           </div>
         </div>
   </div>
@@ -99,7 +99,7 @@ export default {
   height: 2.66rem;
   line-height: 2.66rem;
   border-radius: 50%;
-  background: red;
+  background: #1d7dfa;
 }
 .login-header:hover{
   cursor: pointer;

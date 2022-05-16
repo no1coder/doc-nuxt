@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="" />
+    <list default="true" id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Button-1/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button-1/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Title/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Title/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/button-list/PostPage/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/button-list/PostPage/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/edit/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/edit/index.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,6 +88,9 @@
       <workItem from="1652410264771" duration="30130000" />
       <workItem from="1652493142144" duration="650000" />
       <workItem from="1652517600526" duration="133000" />
+      <workItem from="1652518041682" duration="1976000" />
+      <workItem from="1652583751010" duration="2399000" />
+      <workItem from="1652667744927" duration="8451000" />
     </task>
     <servers />
   </component>

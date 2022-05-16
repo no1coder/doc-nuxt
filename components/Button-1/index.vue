@@ -61,12 +61,11 @@ let showPopover =  ref(false);
 }
 
 .n-popover--show-arrow {
-  padding: 0!important;
+  padding: 3px!important;
 }
 .pl-9 {
   padding-left: 0.25rem;
 }
-.n-popover .n-popover--show-arrow .n-popover--manual-trigger{
-  padding:3px!important;
-}
+
+
 </style>
