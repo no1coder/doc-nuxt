@@ -12,7 +12,6 @@
 			:render-suffix="renderSuffix"
 			:checked-keys="checkedKeys"
 			:expanded-keys="expandedKeys"
-
 			@drop="handleDrop"
 			@update:checked-keys="handleCheckedKeysChange"
 			@update:expanded-keys="handleExpandedKeysChange"
@@ -200,7 +199,7 @@ const handleDrop = ({ node, dragNode, dropPosition }: TreeDropInfo)  => {
 </script>
 <style  lang="less">
 .auto-h {
-	min-height: calc(100vh - 234px);
+	min-height: calc(100vh - 160px);
 }
 .n-tree-node-wrapper{
 	height: 40px;
