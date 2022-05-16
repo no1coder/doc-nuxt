@@ -3,11 +3,11 @@
       v-model:show="showModal"
       :mask-closable="false"
       preset="dialog"
-      title="确认"
-      content="你确认"
-      @positive-click="onPositiveClick"
-      @negative-click="onNegativeClick"
-  />
+  >
+   <div>
+
+   </div>
+  </n-modal>
   <n-space>
     <n-tooltip
         placement="bottom"
@@ -16,7 +16,7 @@
       <template #trigger>
         <img class="w-8 h-8 border-2" src="assets/images/icon/shenglue.svg" alt="" @click="showModal = true">
       </template>
-      <span> I wish they all could be California girls </span>
+      <span>查看所有点赞用户</span>
     </n-tooltip>
   </n-space>
 </template>
@@ -37,5 +37,10 @@ import { ref } from 'vue'
 <style scoped>
 img{
   border-radius:32px;
+}
+.n-dialog.n-modal{
+  width:520px!important;
+  height:295px!important;
+  box-sizing: content-box;
 }
 </style>

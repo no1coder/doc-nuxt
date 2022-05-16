@@ -8,7 +8,7 @@
     </div>
   <p class="like_text text-sm text-gray-400 mb-4 mt-2 text-center">21人点赞</p>
   <div class="mt-5 w-auto flex justify-center">
-    <ul class="touxiang flex justify-between w-5/12 ">
+    <ul class="touxiang flex justify-between ">
       <li v-for="items in Toux" @click="Toux1" :key="items.id" >
         <DocumentTanPop :obj="items"></DocumentTanPop>
       </li>

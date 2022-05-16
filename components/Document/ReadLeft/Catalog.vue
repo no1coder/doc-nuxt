@@ -12,8 +12,7 @@
             :class="{show : isShow}"
         >
           <DocumentReadLeftHead></DocumentReadLeftHead>
-          <button class="w-24 h-12 cang absolute top-24 an_niu flex items-center justify-center border-2" :class="{show:isShow}"  @click="yc">
-            <i :class="{over:isOver}" class="n-base-icon w-8 h-8"><svg class="w-8 h-8" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.64645 3.14645C5.45118 3.34171 5.45118 3.65829 5.64645 3.85355L9.79289 8L5.64645 12.1464C5.45118 12.3417 5.45118 12.6583 5.64645 12.8536C5.84171 13.0488 6.15829 13.0488 6.35355 12.8536L10.8536 8.35355C11.0488 8.15829 11.0488 7.84171 10.8536 7.64645L6.35355 3.14645C6.15829 2.95118 5.84171 2.95118 5.64645 3.14645Z" fill="currentColor"></path></svg></i>
+          <button class="w-12 h-12 cang absolute top-24 an_niu flex items-center justify-center border-2" :class="{show:isShow}"  @click="yc">
             <i :class="{over:isOver}" class="n-base-icon w-8 h-8"><svg class="w-8 h-8" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.64645 3.14645C5.45118 3.34171 5.45118 3.65829 5.64645 3.85355L9.79289 8L5.64645 12.1464C5.45118 12.3417 5.45118 12.6583 5.64645 12.8536C5.84171 13.0488 6.15829 13.0488 6.35355 12.8536L10.8536 8.35355C11.0488 8.15829 11.0488 7.84171 10.8536 7.64645L6.35355 3.14645C6.15829 2.95118 5.84171 2.95118 5.64645 3.14645Z" fill="currentColor"></path></svg></i>
             <i :class="{over:isOver}" class="n-base-icon w-8 h-8"><svg class="w-8 h-8" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.64645 3.14645C5.45118 3.34171 5.45118 3.65829 5.64645 3.85355L9.79289 8L5.64645 12.1464C5.45118 12.3417 5.45118 12.6583 5.64645 12.8536C5.84171 13.0488 6.15829 13.0488 6.35355 12.8536L10.8536 8.35355C11.0488 8.15829 11.0488 7.84171 10.8536 7.64645L6.35355 3.14645C6.15829 2.95118 5.84171 2.95118 5.64645 3.14645Z" fill="currentColor"></path></svg></i>
 
@@ -37,6 +36,7 @@
 </template>
 
 <script setup>
+
 let isOver = ref(false);
 let isShow = ref(false);
 
@@ -44,6 +44,16 @@ const yc = ()=>{
   isShow.value = !isShow.value;
   isOver.value = !isOver.value;
 }
+onMounted(()=>{
+    if(!process.server){
+      window.onresize = (e)=>{
+        if(window.screen.availWidth<1024){
+          isShow.value = true;
+          isOver.value = true;
+        }
+      }
+    }
+})
 
 const menuOptions =  [
   {
@@ -99,13 +109,12 @@ const menuOptions =  [
 
 
 
-
 </script>
 <style scoped>
 .catalog{
   width:18%;
-  min-width: 200px;
   background-color: rgba(255, 255, 255, 0);
+  z-index: 1999;
 }
 ::v-deep(.n-layout-sider-scroll-container){
   min-width: 200px!important;
@@ -142,7 +151,7 @@ aside{
   );
 }
 .show{
-  transform:translate(-10vw);
+  transform:translate(-51%);
 }
 .n-collapse-item{
   margin:0!important;
@@ -157,6 +166,7 @@ aside{
 svg{
   height:2rem!important;
   width:2rem!important;
+  color: #e5e0e0;
 }
 .n-layout{
   overflow:visible;

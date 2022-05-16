@@ -1,6 +1,6 @@
 <template>
   <div class="flex w-full">
-    <div class="read_left hidden lg:block relative" >
+    <div class="read_left  relative" >
       <DocumentReadLeftCatalog></DocumentReadLeftCatalog>
     </div>
 
