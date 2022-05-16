@@ -28,17 +28,11 @@ let active = ref("2kK");
 const goId = (id)=>{
   var anchor = document.getElementById(id);
   // 获取div距离顶部高度
-  console.log(anchor.offsetTop)
-
   let offsetTop = anchor.offsetTop-80;
   let gundongSize = document.documentElement.scrollTop
-
   gundong(offsetTop,gundongSize)
   // document.documentElement.scrollTop = anchor.offsetTop-80;
-  console.log(111111111)
-  console.log(id);
   active.value = id;
-  console.log(111111111)
 }
 const gundong = (offsetTop,doffset) =>{
   console.log(offsetTop,doffset)

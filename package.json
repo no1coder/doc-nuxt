@@ -22,10 +22,6 @@
     "md-editor-v3": "^1.11.12",
     "pinia": "^2.0.14",
     "sanitize-html": "^2.7.0",
-<<<<<<< HEAD
-    "vuedraggable": "^4.1.0"
-  }
-=======
     "screenfull": "^6.0.1",
     "vuedraggable": "^2.24.3"
   },
@@ -43,5 +39,4 @@
     "url": "https://github.com/no1coder/doc-nuxt/issues"
   },
   "homepage": "https://github.com/no1coder/doc-nuxt#readme"
->>>>>>> origin/wxw1
 }

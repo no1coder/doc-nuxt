@@ -7,6 +7,7 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 // @ts-ignore
 // @ts-ignore
 export default defineNuxtConfig({
+  ssr:true,
   buildModules: [
       '@nuxtjs/tailwindcss',
       '@pinia/nuxt',
