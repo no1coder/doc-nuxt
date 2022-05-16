@@ -1,18 +1,18 @@
 <template>
 <div>
-  <div class="title-box w-full">
-        <div class="title">
-          <input type="text" value="输入文章标题..." class="input" onfocus="if(value=='输入文章标题...'){value=''}" onblur="if(value==''){value='输入文章标题...'}">
+  <div class="title-box w-full theme">
+        <div class="title theme">
+          <input type="text" value="输入文章标题..." class="input theme" onfocus="if(value=='输入文章标题...'){value=''}" onblur="if(value==''){value='输入文章标题...'}">
         </div>
         <div class="publish">
-          <div>保存成功</div>
+          <div class="theme">保存成功</div>
           <div>
             <button class="draft">草稿箱</button>
           </div>
           <div class="release-btn"><a> <Button-1></Button-1> </a></div>
 
           <div>
-            <div class="login-header"></div>
+            <div class="login-header">登录</div>
           </div>
         </div>
   </div>
@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .title-box{
   display: flex;
   align-items: center;
@@ -68,12 +68,13 @@ export default {
   color: #c9cdd4;
 }
 .draft{
-  border:1px solid #1d7dfa;
+  /*border:1px solid #1d7dfa;*/
   width: 76px;
   height: 32px;
   line-height: 30px;
   font-size: 14px;
-  color: #1d7dfa;
+  color: white;
+  background: #1d7dfa;
 }
 .publish>div:nth-child(2){
   padding: 0 8px;
@@ -98,10 +99,13 @@ export default {
   height: 2.66rem;
   line-height: 2.66rem;
   border-radius: 50%;
-  background: red;
+  background: #1d7dfa;
 }
 .login-header:hover{
   cursor: pointer;
 }
-
+.theme{
+  background: #000000!important;
+  color: #999999!important;
+}
 </style>

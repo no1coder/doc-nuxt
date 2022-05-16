@@ -1,5 +1,5 @@
 <template>
-<div class=" w-full h-16 head">
+<div class=" w-full h-16 heads" style="padding-top: 40px">
 <button class="btn1" style="margin-right: 20px;">取消</button>
   <button class="btn2">确定并发送</button>
 </div>
@@ -12,15 +12,15 @@ export default {
 </script>
 
 <style scoped>
-.head{
-  margin-top: 10px;
+.heads{
+  margin-top: 15px;
   display: flex;
   border-top: 1px solid #cccccc;
   align-items: center;
   justify-content: flex-end;
   padding-right:28px
 }
-.head>button{
+.heads>button{
   width: 90px;
   height: 32px;
   /*border: 1px solid red;*/

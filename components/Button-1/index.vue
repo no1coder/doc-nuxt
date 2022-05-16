@@ -11,7 +11,7 @@
           发布
         </n-button>
       </template>
-      <div class="h-[85vh]" style="width: 560px">
+      <div class="theme" style="width: 560px;height:650px">
           <Button-ListTags></Button-ListTags>
           <Button-ListClass></Button-ListClass>
         <Button-ListLastbtn></Button-ListLastbtn>
@@ -31,12 +31,14 @@ let showPopover =  ref(false);
 .button1{
   border:0;
   background: #1d7dfa;
+  /*background: white;*/
   color: white;
+  --n-border: 0px solid rgb(224, 224, 230)!important;
 }
-.button1:hover{
+/*.button1:hover{
   background: #388eff!important;
   color: white!important;
-}
+}*/
 .n-button:not(.n-button--disabled):hover {
   background-color: #388eff!important;
   color: white!important;
@@ -59,9 +61,11 @@ let showPopover =  ref(false);
 }
 
 .n-popover--show-arrow {
-  padding: 0!important;
+  padding: 3px!important;
 }
 .pl-9 {
   padding-left: 0.25rem;
 }
+
+
 </style>
