@@ -1,12 +1,16 @@
 <template>
-    <div>
-      <!-- 头部 -->
+  <div>
+    <popup-search ref="MaskLayerSearch"/>
+
+    <!-- 头部 -->
       <div class="bg-stone-900 box-border border-b border-b-zinc-800 fixed w-full">
         <nav class="container m-auto h-16 flex items-center">
           <NuxtLink to="/">
             <h1 class="logo h-8"></h1>
           </NuxtLink>
-          <input class="outline-0 navbar-input h-9 w-4/12 text-sm px-9 mx-12 rounded-2xl" type="text" placeholder="搜索">
+
+          <input class="outline-0 navbar-input h-9 w-4/12 text-sm px-9 mx-12 rounded-2xl" type="text"  placeholder="搜索" @click="masklayer2">
+
           <div class="flex justify-end items-center w-full">
             <div class="hidden lg:block items-center">
               <NuxtLink class="opacity-70 ml-3 text-base text-white font-medium">
@@ -31,7 +35,7 @@
               <span class="opacity-30 w-px h-4 bg-white ml-5 inline-block"></span>
             </div>
             <button class="opacity-70 ml-3 text-base text-white font-medium block">
-                登录
+                <login/>
             </button>
           </div>
         </nav>
@@ -60,9 +64,22 @@
 </template>
 
 <script setup>
+// import PopupSearch from 'components/Login/PopupSearch.vue'
+
+import PopupSearch from "../../components/Login/PopupSearch";
+import {ref} from "vue";
+
 
 let category = ref({})
 category.value = await f.get(`/api/book_categories`)
+
+
+// 开启遮罩层搜索的方法 继承过来的
+const MaskLayerSearch = ref()
+const masklayer2 = () =>{
+  MaskLayerSearch.value.masklayer_hide()
+}
+
 
 
 </script>

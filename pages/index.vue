@@ -1,20 +1,5 @@
 <template>
 
-  <!--  遮罩层样式 -->
-  <div class="mask_layer" v-show="!mask_layer" @click="masklayer_hide">
-    <button class="search_close" ></button>
-    <div class="" style="padding: 150px">
-      <img src="@/assets/post/logo.png" style="margin:0 auto;"/>
-      <!--      搜索框-->
-      <div class="search_string">
-        <span class="searchBox-left"></span>
-        <input class="outline-0 px-9 search_Box" id="search_Box1" type="text" placeholder="搜索"  @click.stop >
-        <span class="search_input_right"></span>
-      </div>
-    </div>
-  </div>
-
-
   <div id="Home bgcol" >
     <div id="head" class="bg-white dark:bg-black">
       <div >
@@ -22,25 +7,21 @@
         <NuxtLink>墨水屏版</NuxtLink> |
         <NuxtLink>手机版</NuxtLink> |
         <NuxtLink >微信听书</NuxtLink> |
-
-        <NuxtLink class="cursor-pointer">
-          <login class="cursor-pointer" :showModal="true" v-if="!userStore.token">
-          </login>
-
-          <span v-show="userStore.token">
-      <n-dropdown trigger="click" :options="options" @select="handleSelect">
-        <span>用户资料</span>
-      </n-dropdown>
-          </span>
+        <NuxtLink>
+          <login/>
         </NuxtLink>
-
       </div>
     </div>
 
     <div class="home">
-      <PostSearchDemo :masklayer1="masklayer1" />
-      <div class="bgcol grid grid-cols-1 lg:grid-cols-2 book">
 
+
+      <!-- 首页搜索的组件 -->
+      <PostSearchDemo  />
+
+
+
+      <div class="bgcol grid grid-cols-1 lg:grid-cols-2 book">
         <!-- 飙升出版书列表 -->
         <div class="">
           <div class="diva">
@@ -94,7 +75,6 @@
             查看全部
             <div><img src="@/assets/post/右.png" /></div>
           </div>
-
         </div>
 
         <!-- 男生更新书单列表 -->
@@ -125,8 +105,6 @@
       </div>
       <!-- 底部固定栏 固定移动组件不需要-->
       <div class="tabBar">
-        <!--      <PostTabBar/>-->
-
       </div>
     </div>
   </div >
@@ -135,81 +113,35 @@
 
 <script setup>
 import {ref} from "vue";
-import {useUserStore} from "../stores/userStore";
-import {logout} from "../util/util";
+import PopupSearch from "../components/Login/PopupSearch";
 
 
-let mask_layer  = ref(true);       // 遮罩层隐藏显示
+let mask_layer  = ref(true);       // 遮罩层隐藏
 
-// 遮罩层显示效果
-const masklayer1 = (e) => {
-  mask_layer.value = e
-
-  document.body.style="overflow: hidden;"                     // 关闭轮滑
-  setTimeout(() =>{
-    document.getElementById('search_Box1').focus();  // 自动焦点
-  },200);
-
-  console.log(e,'遮罩层开启')
-}
-// 遮罩层隐藏效果
-const masklayer_hide = () =>{
-  mask_layer.value = true;
-  document.body.style="overflow: visible;"
-  console.log('遮罩层隐藏')
-}
-
-
-// 退出登录
-const userStore = useUserStore();                 // 获取用户信息  和token
-const userInfo = await userStore.getUserInfo
-const logoutHeader = ()=>{
-  console.log(123123,'点击退出登录==>>',userStore.token)
-  if (userStore.token){
-    logout()
-    //将token设置为空
-    console.log('全局提示消息退出成功');
-  }else{
-    console.log('全局提示消息退出失败');
-  }
-}
-
-
-// 登录后显示效果
-let options = [
-  {
-    label: "用户资料",
-    key: "profile",
-  },
-  {
-    label: "退出登录",
-    key: "logout",
-  }
-]
-const handleSelect = (key) => {
-  if(key == 'logout'){
-    logoutHeader()
-    console.log('全局提示用户退出成功')
-  }else if (key == 'profile'){
-    console.log(key,'全局提示进入用户资料==>>',userInfo)
-  }else{
-    console.log('未知操作')
-  }
-}
 
 
 </script>
 
 <style lang="less">
-// 遮罩层关闭按钮
+// 遮罩层关闭按钮 轮滑位置设置
+.n-scrollbar-raill{
+  right: 4px;
+  top: 2px;
+  bottom: 2px;
+  //width: 1.7vh;
+  margin-right:1.7vh;
+  background: #171717;
+  position: absolute;
+}
+// 点击关闭
 .search_close {
   width: 32px;
   height: 32px;
   position: absolute;
-  z-index: 101;
-  right: 20px;
+  z-index: 10;
+  right: 30px;
   top: 20px;
-  text-indent: -9999em;
+  //text-indent: -9999em;
   background: url(https://weread-1258476243.file.myqcloud.com/web/wrwebnjlogic/image/search_panel_close.c5182ad8.png) no-repeat;
   background-size: 100%;
 }

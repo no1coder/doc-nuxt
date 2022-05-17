@@ -1,8 +1,14 @@
 <template>
 
-  <span @click="showModal = true">
+  <span class="cursor-pointer" @click="showModal = true"  v-if="!userStore.token">
     登录
   </span>
+  <span v-show="userStore.token">
+      <n-dropdown trigger="click" :options="options" @select="handleSelect">
+        <span>用户资料</span>
+      </n-dropdown>
+  </span>
+
   <n-modal v-model:show="showModal" style="background:#f8fcff" >
     <n-card class="modalBox rounded-lg "
             :bordered="false"
@@ -32,7 +38,7 @@
             </div>
             <div class="formSize">
               <n-form-item path="password" class="mt-25" >
-                <n-input v-model:value="form.password" type="password" placeholder="请输入密码"/>
+                <n-input  show-password-on="click" v-model:value="form.password" type="password" placeholder="请输入密码"/>
               </n-form-item>
             </div>
 
@@ -155,7 +161,7 @@
 
           <div class="formSize">
             <n-form-item path="password" class="mt-25" >
-              <n-input   v-model:value="form.password" placeholder="请输入密码">
+              <n-input show-password-on="click"   v-model:value="form.password" type="password" placeholder="请输入密码">
               </n-input>
             </n-form-item>
           </div>
@@ -173,22 +179,15 @@
 
           <!-- 账号下面的文字-->
           <div class="text-right text-sm text-slate-400 w-400"  >
-<!--            <n-checkbox v-model:checked="disabled2" class="followingText3" >-->
-<!--                  <span class="text-slate-400 hover:text-black">-->
-<!--                    同意隐私政策-->
-<!--                  </span>-->
-<!--            </n-checkbox>-->
-<!--            <n-form-item path="disabled3">-->
             <n-checkbox v-model:checked="disabled2" class="followingText3">
                 <n-space class="text-slate-400 hover:text-black">
                     同意隐私政策
                 </n-space>
               </n-checkbox>
-<!--            </n-form-item>-->
-                        <span  class="cursor-pointer hover:text-black mr-14" @click="forget_password">找回账号</span>
+                 <span  class="cursor-pointer hover:text-black mr-14" @click="forget_password">找回账号</span>
           </div>
         </n-form>
-        <!-- 登录按钮-->
+        <!-- 快速注册按钮-->
         <div  class="my-5" >
           <div class="rounded-full bg-red-500 ml-6 w-80">
             <button class="text-white text-base hover:bg-red-600 duration-300 rounded-full w-full h-12" @click="fastRegistration">
@@ -227,7 +226,7 @@
 
           <div class="formSize">
             <n-form-item path="password" class="mt-25" >
-              <n-input   v-model:value="form.password" placeholder="请输入新密码">
+              <n-input show-password-on="click"   v-model:value="form.password" placeholder="请输入新密码">
               </n-input>
             </n-form-item>
           </div>
@@ -242,19 +241,9 @@
               </n-input>
             </n-form-item>
           </div>
-
-          <!-- 账号下面的文字-->
-<!--          <div class="text-right text-sm text-slate-400 w-400"  >-->
-<!--            <n-checkbox v-model:checked="disabled2" class="followingText3" >-->
-<!--                  <span class="text-slate-400 hover:text-black">-->
-<!--                    同意隐私政策-->
-<!--                  </span>-->
-<!--            </n-checkbox>-->
-
-<!--            <span  class="cursor-pointer hover:text-black mr-14" @click="forget_password">找回账号</span>-->
-<!--          </div>-->
         </n-form>
-        <!-- 登录按钮-->
+
+        <!-- 忘记密码提交按钮-->
         <div  class="my-5" >
           <div class="rounded-full bg-red-500 ml-6 w-80">
             <button class="text-white text-base hover:bg-red-600 duration-300 rounded-full w-full h-12" @click="retrieve_id">
@@ -528,7 +517,7 @@ const phoneCode1 = () =>{
 
 
 
-// 手机发送注册验证码    13966539890
+// 手机发送注册验证码
 const register_Code = () =>{
     console.log('注册验证码')
   if ((/^1[3456789]\d{9}$/.test(form.phone))) {
@@ -560,8 +549,8 @@ const register_Code1 = () =>{
 }
 
 
-// 注册账号提交按钮   13839063614
-const fastRegistration = (e) => {
+// 注册账号提交按钮
+const fastRegistration = () => {
   console.log(123213)
   // e.preventDefault();
   // form.value?.validate((errors) => {
@@ -622,7 +611,6 @@ const retrieve_id = () => {
     setLoginToken(res.token)      // 保存token
 
     console.log(res,'全局提示消息忘记账号提交成功')
-
 
      form = reactive({
       username: undefined,
@@ -688,6 +676,50 @@ const setLoginToken = (token)=>{
   })
   return true;
 }
+
+
+
+
+// 退出登录
+const userStore = useUserStore();                 // 获取用户信息  和token
+const userInfo = await userStore.getUserInfo
+const logoutHeader = ()=>{
+  console.log(123123,'点击退出登录==>>',userStore.token)
+  if (userStore.token){
+    logout()
+    //将token设置为空
+    console.log('全局提示消息退出成功');
+  }else{
+    console.log('全局提示消息退出失败');
+  }
+}
+
+
+// 登录后显示效果
+let options = [
+  {
+    label: "用户资料",
+    key: "profile",
+  },
+  {
+    label: "退出登录",
+    key: "logout",
+  }
+]
+const handleSelect = (key) => {
+  if(key == 'logout'){
+    logoutHeader()
+    console.log('全局提示用户退出成功')
+  }else if (key == 'profile'){
+    console.log(key,'全局提示进入用户资料==>>',userInfo)
+  }else{
+    console.log('未知操作')
+  }
+}
+
+
+
+
 
 
 </script>
