@@ -11,22 +11,10 @@
       <change beforePath="$PROJECT_DIR$/pages/creator/content/column.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/content/column.vue" afterDir="false" />
 =======
     <list default="true" id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/icon/sc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon/taiy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/icon/yuel.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Document/BorW.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Document/Fdj.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Document/Shouc.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Document/Xinjian.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Document/Center/Article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Article.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Document/Center/ArticleBottom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/ArticleBottom.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Document/Center/Review.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Review.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Document/Center/Share/Xiang.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Share/Xiang.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Document/Center/Zan/Dian.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Zan/Dian.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Document/ReadLeft/Catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/ReadLeft/Catalog.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Document/ReadLeft/Head.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/ReadLeft/Head.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/BorW.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/BorW.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/Top/Tou.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Top/Tou.vue" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/components/Document/readright/right.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/readright/right.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/right/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/right/List.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/read/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/read/index.vue" afterDir="false" />
@@ -38,6 +26,8 @@
       <change beforePath="$PROJECT_DIR$/components/catalogue/NewlyBuild.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/NewlyBuild.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/catalogue/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Search.vue" afterDir="false" />
 >>>>>>> origin/zcq
+=======
+>>>>>>> origin/xxl
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +162,7 @@
       <workItem from="1652663146099" duration="11025000" />
       <workItem from="1652695094293" duration="9045000" />
       <workItem from="1652750452353" duration="32737000" />
+<<<<<<< HEAD
       <workItem from="1652836931871" duration="23013000" />
 >>>>>>> origin/xxl
 =======
@@ -179,6 +170,9 @@
       <workItem from="1652404975171" duration="31227000" />
       <workItem from="1652493853920" duration="15336000" />
 >>>>>>> origin/zcq
+=======
+      <workItem from="1652836931871" duration="26128000" />
+>>>>>>> origin/xxl
     </task>
     <servers />
   </component>
