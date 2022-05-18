@@ -11,20 +11,20 @@
 let isChange = ref(true)
 const change = ()=>{
   isChange.value = !isChange.value
-  localStorage.theme = 'dark'
+  localStorage.theme = 'light'
       console.log(localStorage.theme)
-  if (localStorage.theme === 'dark') {
-    document.documentElement.classList.add('dark')
+  if (localStorage.theme === 'light') {
+    document.documentElement.classList.add('light')
   } else {
-    document.documentElement.classList.remove('dark')
+    document.documentElement.classList.remove('light')
   }
 }
 onMounted(()=>{
 
-  if (localStorage.theme === 'dark') {
-    document.documentElement.classList.add('dark')
+  if (localStorage.theme === 'light') {
+    document.documentElement.classList.add('light')
   } else {
-    document.documentElement.classList.remove('dark')
+    document.documentElement.classList.remove('light')
   }
 
 })
