@@ -63,6 +63,8 @@ export default defineComponent({
       action="https://www.mocky.io/v2/5e4bafc63100007100d8b70f"
       :default-file-list="fileList"
       list-type="image-card"
+      max="1"
+      accept=".jpg,.jpeg/.png"
   >
     点击上传
   </n-upload>

@@ -5,13 +5,16 @@
         :show="showPopover"
         placement="bottom"
         trigger="manual"
+        style="padding: 3px 3px;background: linear-gradient(90deg,#69d9f1,plum);margin-top: 20px;border-radius: 3px"
+        b
+        arrow-point-to-center:false
     >
-      <template #trigger>
+      <template #trigger style="background: red">
         <n-button @click="showPopover = !showPopover" class="button1 w-full">
           发布
         </n-button>
       </template>
-      <div class="theme" style="width: 560px;height:650px">
+      <div class="theme" style="width: 560px;height:630px;background: #1d7dfa">
           <Button-ListTags></Button-ListTags>
           <Button-ListClass></Button-ListClass>
         <Button-ListLastbtn></Button-ListLastbtn>
@@ -55,16 +58,26 @@ let showPopover =  ref(false);
   width:62px;
   height:32px;
 }
-.v-binder-follower-content{
-  transform: translateX(1500px) translateY(63px) translateX(-100%)!important;
-  --v-offset-left: 74px!important;
-}
 
-.n-popover--show-arrow {
-  padding: 3px!important;
+.n-popover--manual-trigger
+ {
+  padding: 100px!important;
 }
 .pl-9 {
   padding-left: 0.25rem;
+}
+::v-deep(.n-popover .n-popover-arrow-wrapper .n-popover-arrow){
+  background:red!important;
+}
+
+
+
+
+
+
+
+body{
+  background: black!important;
 }
 
 
