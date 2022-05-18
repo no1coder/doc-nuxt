@@ -5,7 +5,9 @@
   </span>
   <span v-show="userStore.token">
       <n-dropdown trigger="click" :options="options" @select="handleSelect">
-        <span>{{ userInfo.username }}</span>
+<!--        <span v-if="userInfo.username">{/{ userInfo.username }}</span>-->
+        <span>用户信息</span>
+
       </n-dropdown>
   </span>
 
