@@ -4,9 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="b44251ad-d9fa-4d4d-85f5-ff052102cbec" name="默认变更列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/creator/content/column.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/content/column.vue" afterDir="false" />
+=======
+    <list default="true" id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/icon/sc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/icon/taiy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/icon/yuel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Document/BorW.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Document/Fdj.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Document/Shouc.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Document/Xinjian.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/Article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Article.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/ArticleBottom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/ArticleBottom.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/Review.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Review.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/Share/Xiang.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Share/Xiang.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/Zan/Dian.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Zan/Dian.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/ReadLeft/Catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/ReadLeft/Catalog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/ReadLeft/Head.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/ReadLeft/Head.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Top/Tou.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Top/Tou.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/readright/right.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/readright/right.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/right/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/right/List.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/read/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/read/index.vue" afterDir="false" />
+>>>>>>> origin/xxl
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +92,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/icon" />
+>>>>>>> origin/xxl
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -78,6 +105,20 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="I:\Webstorm\webfile\WebStorm 2021.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+<<<<<<< HEAD
+=======
+    <property name="vuejs.nuxt.types-notification-shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\subject\doc-nuxt\assets\images\icon" />
+      <recent name="D:\subject\doc-nuxt\components\Document\Top" />
+      <recent name="D:\subject\doc-nuxt\components\Document" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\subject\doc-nuxt\components\Document" />
+    </key>
+>>>>>>> origin/xxl
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -90,6 +131,7 @@
       <workItem from="1652079473017" duration="27098000" />
       <workItem from="1652232183908" duration="30039000" />
       <workItem from="1652319339707" duration="5934000" />
+<<<<<<< HEAD
       <workItem from="1652355598908" duration="4701000" />
       <workItem from="1652410264771" duration="30130000" />
       <workItem from="1652493142144" duration="650000" />
@@ -100,6 +142,18 @@
       <workItem from="1652750533754" duration="1863000" />
       <workItem from="1652752426734" duration="9628000" />
       <workItem from="1652841297396" duration="8000000" />
+=======
+      <workItem from="1652352870520" duration="1072000" />
+      <workItem from="1652404469770" duration="6216000" />
+      <workItem from="1652413084033" duration="4813000" />
+      <workItem from="1652423022978" duration="18948000" />
+      <workItem from="1652493100271" duration="14667000" />
+      <workItem from="1652511737949" duration="4189000" />
+      <workItem from="1652663146099" duration="11025000" />
+      <workItem from="1652695094293" duration="9045000" />
+      <workItem from="1652750452353" duration="32737000" />
+      <workItem from="1652836931871" duration="23013000" />
+>>>>>>> origin/xxl
     </task>
     <servers />
   </component>
@@ -113,6 +167,11 @@
           <url>file://$PROJECT_DIR$/components/category/Content.vue</url>
           <line>103</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/Document/ReadLeft/Catalog.vue</url>
+          <line>199</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
