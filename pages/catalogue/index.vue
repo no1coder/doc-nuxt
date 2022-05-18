@@ -10,8 +10,9 @@
 			<div class="h-16">
 				<CatalogueSearch />
 			</div>
-			<div class="flex-auto" v-for="item in catalogue">
+			<div class="flex-auto" v-for="item in catalogue.data">
 				<CatalogueContent  :Obj="item" />
+				<div>{{typeof item}}</div>
 			</div>
         </div>
     </div>

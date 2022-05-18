@@ -1,8 +1,5 @@
 <template>
 	<div>
-<!--		<div v-if="props.show" class="md:max-w-[15%] h-full mr-[2%] text-right" >-->
-<!--&lt;!&ndash;			{{element.time}}&ndash;&gt;时间-->
-<!--		</div>-->
 		<div   class="md:max-w-[15%] flex pr-7 h-full items-center">
 			<div class="h-[22px] w-6 mx-2" @click.stop="stop">
 				<n-dropdown trigger="click" :options="data" @update:show="dropdownShow" placement="bottom-end" class="w-36">

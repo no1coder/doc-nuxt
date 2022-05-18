@@ -2,7 +2,7 @@
     <div class="mb-3 border rounded-md">
         <div class="h-full bg-white rounded-md" >
 <!--			<CatalogueTree :item="item"></CatalogueTree>-->
-<!--				<div>{{item}}</div>-->
+				<div>{{i}}</div>
 	
 			<div class="h-full auto-h">
 				<n-tree
@@ -34,15 +34,8 @@
 			
 			
         </div>
-		<div>{{Props.Obj}}</div>
     </div>
 </template>
-
-
-
-
-
-
 
 
 <script lang="ts" setup>
@@ -50,9 +43,10 @@ import { TreeOption, TreeDropInfo } from 'naive-ui'
 import Cinput from './CInput'
 import Add from './Add.vue'
 
-let Props = defineProps({
-	Obj:Object
-})
+interface Props {
+	// Obj:Object
+}
+// const {Obj}  = defineProps<Props>()
 
 const show = ref(true)
 const clickAction = ref(false)
