@@ -1,15 +1,15 @@
 <template>
-  <div :class="{hidden:isChange}" @click="change">
-    <img src="~assets/images/icon/taiy.svg" alt="" class="h-8 w-8">
+  <div :class="{hidden:isChange}" @click="changeL">
+    <img src="~assets/images/icon/taiy.svg" alt="" class="h-8 w-8 dark:bg-white">
   </div>
-  <div :class="{hidden:!isChange}" @click="change">
+  <div :class="{hidden:!isChange}" @click="changeD" >
     <img src="~assets/images/icon/yuel.svg" alt="" class="h-8 w-8">
   </div>
 </template>
 
 <script setup>
 let isChange = ref(true)
-const change = ()=>{
+const changeD = ()=>{
   isChange.value = !isChange.value
   localStorage.theme = 'dark'
       console.log(localStorage.theme)
@@ -19,15 +19,24 @@ const change = ()=>{
     document.documentElement.classList.remove('dark')
   }
 }
-onMounted(()=>{
-
+const changeL = ()=>{
+  isChange.value = !isChange.value
+  localStorage.theme = 'light'
+  console.log(localStorage.theme)
+  if (localStorage.theme === 'dark') {
+    document.documentElement.classList.add('dark')
+  } else {
+    document.documentElement.classList.remove('dark')
+  }
+}
+/*onMounted(()=>{
   if (localStorage.theme === 'dark') {
     document.documentElement.classList.add('dark')
   } else {
     document.documentElement.classList.remove('dark')
   }
 
-})
+})*/
 
 
 

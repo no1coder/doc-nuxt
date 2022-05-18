@@ -18,7 +18,7 @@
       <n-anchor-link title="Props" href="#Props" />
     </n-anchor>
   </div>
-  <n-space style="padding-left: 400px">
+  <n-space style="padding-left: 400px" class="text-black dark:text-white">
 
 <!--    <n-button @click="scrollTo('#affix')">-->
 <!--      固定-->
@@ -47,5 +47,8 @@ import { defineComponent, ref } from "vue";
 ::v-deep(.n-anchor-link__title){
   font-size:14px!important;
   font-weight:bold
+}
+::v-deep(.n-anchor-link__title){
+  color: rgb(159, 161, 162) !important;
 }
 </style>
