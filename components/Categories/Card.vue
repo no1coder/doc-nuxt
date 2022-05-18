@@ -1,5 +1,4 @@
 <template>
-  <div class="pt-[4.5rem] ml-0 lg:ml-48">
     <h1 class="text-white ml-2 lg:ml-5 lg:text-lg my-5 flex items-center" :id="items.id">
       <img src="plugins/category/biaoji.png" class="w-9 h-10 mr-1.5" alt=""/>
       {{items.name}}
@@ -33,7 +32,6 @@
         </div>
       </NuxtLink>
     </div>
-  </div>
 </template>
 
 <script setup>

@@ -5,7 +5,9 @@
       <div class="bg-stone-900">
         <div class="container m-auto min-h-screen">
           <CategoriesAnchor :obj="category"/>
-          <CategoriesCard v-for="items in book" :items="items" :key="items.id" :obj="items"/>
+          <div class="pt-[4.5rem] ml-0 lg:ml-48">
+            <CategoriesCard v-for="items in book" :items="items" :key="items.id" :obj="items"/>
+          </div>
         </div>
       </div>
     </div>
