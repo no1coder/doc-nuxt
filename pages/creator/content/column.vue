@@ -11,11 +11,12 @@
 
 
         </n-tab-pane>
-        <template #suffix>
-          <n-button @click="showModal = true">
+        <template #suffix class="n-card">
+          <n-button @click="showModal = true"  >
             新建专栏
           </n-button>
           <n-modal
+              style="width: 600px"
               v-model:show="showModal"
               class="custom-card"
               preset="card"
@@ -58,6 +59,7 @@
             </n-form>
             专栏封面
             <n-upload
+
                 multiple
                 directory-dnd
                 action="https://www.mocky.io/v2/5e4bafc63100007100d8b70f"
@@ -69,10 +71,10 @@
                   </n-icon>
                 </div>
                 <n-text style="font-size: 16px">
-                  点击或者拖动文件到该区域来上传
+                  点击上传图片
                 </n-text>
                 <n-p depth="3" style="margin: 8px 0 0 0">
-                  请不要上传敏感数据，比如你的银行卡号和密码，信用卡号有效期和安全码
+                  建议尺寸：480*270px
                 </n-p>
               </n-upload-dragger>
             </n-upload>
@@ -89,9 +91,9 @@
 
 <script setup>
 
-
+import { ArchiveOutline as ArchiveIcon } from '@vicons/ionicons5'
     const  bodyStyle ={
-        width: '600px'
+        width: '480px'
       }
     const  segmented = {
         content: 'soft',
@@ -121,19 +123,28 @@
       }
     ,
     }
+const components = {
+  ArchiveIcon
+}
 
-   const components = {
-      ArchiveIcon
-    }
 </script>
 
 <style scoped>
-.bg{
-  background: white;
-}
+
 .v-x-scroll {
   overflow: auto;
   height: 70px;
   scrollbar-width: none;
 }
+.n-form {
+  padding-top: 0px;
+}
+.n-form-item {
+  display: block;
+
+}
+.n-upload-dragger {
+  width: 399px;
+}
+
 </style>
