@@ -7,11 +7,7 @@
 </template>
 
 <script setup >
-let props = defineProps({
-	getInput:Function
-})
-
-let  list = reactive([
+let list = reactive([
     {
         name: "一级数据12131`23123",
         time:'05-07 22:08',
@@ -57,39 +53,8 @@ let  list = reactive([
         level:1,
         tasks: []
     }
-      ])
-// watch(list,(new2,old1)=>{
-//     list = checkList(new2)
-// },  { deep: true }
-// )
-// const checkList = (items,level = 1) => {
-//     console.log(items.length);
-//     for(let i =0;i<items.length;i++){
-//         items[i].level = level
-//         if(items[i].tasks.length > 0){
-//             items[i].tasks = checkList(items[i].tasks,level+1)
-//         }
-//     }
-//     return items;
-// }
-const options = [
-	{
-	  label: '全部层级',
-	  key: 'All levels',
-	},
-	{
-	  label: '第一级',
-	  key: "first stage"
-	},
-	{
-	  label: '第二级',
-	  key: 'Second stage'
-	},
-	{
-	  label: '第三级',
-	  key: 'Third level'
-	}
-];
+])
+
 </script>
 
 <style lang="less" scoped>

@@ -5,7 +5,7 @@
 				<button class="text-white bg-green-500 w-20 h-full rounded" >新建</button>
 			</n-dropdown>
 		</div>
-		<catalogue-newly-build :addValue="addValue" :keys="keys"  v-model:show="showModal"></catalogue-newly-build>
+		<catalogueNewlyBuild :addValue="addValue" :keys="keys"  v-model:show="showModal"></catalogueNewlyBuild>
 	</div>
 </template>
 
@@ -19,15 +19,13 @@ const renderImg = (src) => {
 		})
 	}
 }
-
-let showModal =  ref(false);
 //点击新建下面的选项
+let showModal =  ref(false);
 let keys = ref()
 const handleSelect =  (key: string | number) => {
 	showModal.value = true;
 	keys.value = key
 }
-
 
 //获取input表单输入的内容
 const addValue = (e) => {
