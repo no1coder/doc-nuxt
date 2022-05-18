@@ -1,5 +1,5 @@
 <template>
-  <div class="center container mx-auto  flex items-center place-content-center flex-col pt-8 ">
+  <div class="center container mx-auto  flex items-center place-content-center  flex-col pt-8 ">
 
       <h1 class="h1">默认知识库</h1>
 
