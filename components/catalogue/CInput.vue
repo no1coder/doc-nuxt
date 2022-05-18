@@ -1,5 +1,5 @@
 <template> 
-	<input  type="text" :value="option.label"  @blur="blur2" class="w-1/3 h-8 mt-1" ref="inputVal" >
+	<input  type="text" :value="option.label"  @blur="blur2" class="w-1/3 h-7" ref="inputVal" >
 </template>
 
 <script lang="ts" setup >

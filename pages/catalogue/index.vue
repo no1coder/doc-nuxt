@@ -10,15 +10,19 @@
 			<div class="h-16">
 				<CatalogueSearch />
 			</div>
-			<div class="flex-auto">
-				<CatalogueContent />
+			<div class="flex-auto" v-for="item in catalogue">
+				<CatalogueContent  :Obj="item" />
 			</div>
         </div>
     </div>
 </template> 
 
 <script lang="ts" setup>
-
+let catalogue = ref()
+catalogue.value = await f.get(`/api/posts`);
+console.log(2222)
+console.log(catalogue.value)
+console.log(111111)
 </script>
 
 <style lang="less" scoped>

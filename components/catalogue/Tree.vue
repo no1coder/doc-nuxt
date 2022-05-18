@@ -1,23 +1,5 @@
 <template>
-	<div class="h-full auto-h">
-		<n-tree
-			block-line
-			checkable
-			cascade
-			draggable
-			:data="data"
-			:default-expand-all="true"
-			:render-label="renderLabel"
-			:render-suffix="renderSuffix"
-			:checked-keys="checkedKeys"
-			:expanded-keys="expandedKeys"
-			@drop="handleDrop"
-			@mouseover="mouseOver"
-			@mouseleave="mouseLeave"
-			@update:checked-keys="handleCheckedKeysChange"
-			@update:expanded-keys="handleExpandedKeysChange"
-		/>
-	</div>
+
 	
 </template>
 
@@ -219,20 +201,18 @@ const handleDrop = ({ node, dragNode, dropPosition }: TreeDropInfo)  => {
 	min-height: calc(100vh - 160px);
 	.n-tree--block-line{
 		::v-deep .n-tree-node-wrapper{
-			border: 1px solid red;
-			
 			height: 45px;
 			.n-tree-node {
 				display:flex;
-				justify-content:center;
-				align-items:center;
-				border:1px solid blue;
+				align-items: center;
 				height: 100%;
-				line-height:100%;
-				padding-top: 5px !important;
-				font-size: 14px;
 				.n-tree-node-content{
-					align-items: center;
+					height:100%;
+					.n-tree-node-content__text{
+						height: 100%;
+						line-height:37px;
+						align-items: center;
+					}
 				}
 			}
 		}	
