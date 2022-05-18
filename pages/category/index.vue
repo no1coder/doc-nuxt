@@ -10,7 +10,9 @@
       <div class="bg-stone-900">
         <div class="container m-auto min-h-screen">
           <CategoriesAnchor :obj="category"/>
-          <CategoriesCard v-for="items in book" :items="items" :key="items.id" :obj="items"/>
+          <div class="pt-[4.5rem] ml-0 lg:ml-48">
+            <CategoriesCard v-for="items in book" :items="items" :key="items.id" :obj="items"/>
+          </div>
         </div>
       </div>
     </div>
@@ -28,7 +30,6 @@ category.value = await f.get(`/api/book_categories`)
 
 let book = ref({})
 book.value = await f.get(`/api/books`)
-console.log(1111111111111)
 console.log(book.value);
 
 
