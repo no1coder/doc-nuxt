@@ -1,6 +1,7 @@
 <template>
   <div class="pt-[4.5rem] ml-0 lg:ml-48">
-    <h1 class="text-white ml-2 lg:ml-7 lg:text-xl" :id="items.id">
+    <h1 class="text-white ml-2 lg:ml-5 lg:text-lg my-5 flex items-center" :id="items.id">
+      <img src="plugins/category/biaoji.png" class="w-9 h-10 mr-1.5" alt=""/>
       {{items.name}}
     </h1>
     <div class="grid grid-cols-1 2xl:grid-cols-2">
@@ -17,11 +18,11 @@
             </p>
             <p class="flex items-center mt-2 overflow-hidden text-slate-400 ">
               <span class="text-sm hidden sm:block">
-                <span class="mr-0.5 text-sm not-italic">1.6</span>万人今日阅读
+                <span class="mr-0.5 text-sm not-italic">{{item.learn_count}}</span>人今日阅读
               </span>
               <span class="w-px h-3 mx-3 bg-slate-400 inline-block hidden sm:block"></span>
               <span class="text-sm">推荐值
-                      <span class="text-sm not-italic">74.4%</span>
+                      <span class="text-sm not-italic">{{item.like_count}}</span>
                     </span>
               <img class="h-6 flex-shrink-0 ml-2" src="https://weread-1258476243.file.myqcloud.com/miniprogram/assets/reader/book_ratings_80.svg" alt="标签" />
             </p>

@@ -22,7 +22,6 @@ category.value = await f.get(`/api/book_categories`)
 
 let book = ref({})
 book.value = await f.get(`/api/books`)
-console.log(1111111111111)
 console.log(book.value);
 
 
