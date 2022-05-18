@@ -6,7 +6,6 @@
         placement="bottom"
         trigger="manual"
         style="padding: 3px 3px;background: linear-gradient(90deg,#69d9f1,plum);margin-top: 20px;border-radius: 3px"
-        b
         arrow-point-to-center:false
     >
       <template #trigger style="background: red">
