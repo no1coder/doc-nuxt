@@ -12,7 +12,7 @@
           </div>
           <div class="flex-1 pl-8">
             <p class="text-white overflow-hidden text-lg h-auto max-h-14">{{item.title}}</p>
-            <p class="mt-2.5 text-sm max-h-5 h-auto text-slate-400" v-for="(names,index) in item.author.data">
+            <p class="mt-2.5 text-sm max-h-5 h-auto text-slate-400" v-for="(names,index) in item.author.data" :key="names.id">
                 <span v-if="index == 0">{{names.name}}</span>
             </p>
             <p class="flex items-center mt-2 overflow-hidden text-slate-400 ">
