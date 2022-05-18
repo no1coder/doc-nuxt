@@ -9,7 +9,7 @@
   <p class="like_text text-sm text-gray-400 mb-4 mt-2 text-center">21人点赞</p>
   <div class="mt-5 w-auto flex justify-center">
     <ul class="touxiang flex justify-between ">
-      <li v-for="items in Toux" @click="Toux1" :key="items.id" >
+      <li v-for="items in Toux" @click="Toux1" :key="items.id" class="mx-1 flex items-center">
         <DocumentTanPop :obj="items"></DocumentTanPop>
       </li>
       <li>
@@ -38,7 +38,10 @@ const Toux = ref([
   {id:5,url:'assets/images/icon/image.png'},
   {id:6,url:'assets/images/icon/image.png'},
   {id:7,url:'assets/images/icon/image.png'},
-  {id:7,url:'assets/images/icon/image.png'},
+  {id:8,url:'assets/images/icon/image.png'},
+  {id:9,url:'assets/images/icon/image.png'},
+  {id:10,url:'assets/images/icon/image.png'},
+  {id:11,url:'assets/images/icon/image.png'},
 ])
 
 // const D_zan = ()=>{

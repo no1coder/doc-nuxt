@@ -1,5 +1,5 @@
 <template>
-  <div class="top relative">
+  <div class="top relative bg-white">
   <DocumentTopTou></DocumentTopTou>
   </div>
   <div class="flex">
@@ -10,12 +10,12 @@
       <DocumentRightList></DocumentRightList>
     </div>
   </div>
-  <div class="fixed right-6 bottom-8 h-auto w-auto">
-    <DocumentFixiconHuiDing class="mt-4"></DocumentFixiconHuiDing>
-    <DocumentFixiconZan class="mt-4"></DocumentFixiconZan>
-    <DocumentFixiconQipao class="mt-4"></DocumentFixiconQipao>
-    <DocumentFixiconMobile class="mt-4"></DocumentFixiconMobile>
-  </div>
+    <div class="fixed right-6 bottom-8 h-auto w-auto">
+      <DocumentFixiconHuiDing class="mt-4"></DocumentFixiconHuiDing>
+      <DocumentFixiconZan class="mt-4"></DocumentFixiconZan>
+      <DocumentFixiconQipao class="mt-4"></DocumentFixiconQipao>
+      <DocumentFixiconMobile class="mt-4"></DocumentFixiconMobile>
+    </div>
 </template>
 
 <script>

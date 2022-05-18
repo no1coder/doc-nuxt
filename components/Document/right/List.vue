@@ -27,21 +27,15 @@
 
 </template>
 
-<script>
+<script setup>
 import { defineComponent, ref } from "vue";
 
-export default defineComponent({
-  setup() {
+
     const anchorRef = ref(null);
     const scrollTo = (href) => {
       anchorRef.value?.scrollTo(href);
     };
-    return {
-      anchorRef,
-      scrollTo
-    };
-  }
-});
+
 </script>
 
 <style scoped>

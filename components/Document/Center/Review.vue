@@ -1,5 +1,5 @@
 <template>
-<div class="mt-7 w-full px-12">
+<div class="mt-7 w-full">
   <div class="font-bold text-sm border-b border-solid h-10">所有评论（2）</div>
 
   <div class="review-content flex py-5 border-b border-gray-100">

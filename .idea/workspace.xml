@@ -5,23 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aab09046-28a9-4f67-b3a3-576fff8adb8d" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/icon/sc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/icon/taiy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/icon/yuel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Document/BorW.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Document/Fdj.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Document/Shouc.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Document/Xinjian.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/Article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Article.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/ArticleBottom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/ArticleBottom.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/Review.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Review.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/Center/Share/Xiang.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Share/Xiang.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/Center/Zan/Dian.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Zan/Dian.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/ReadLeft/Catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/ReadLeft/Catalog.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/ReadLeft/Head.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/ReadLeft/Head.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Document/Tan/MoreU.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Tan/MoreU.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Top/Tou.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Top/Tou.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/readright/right.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/readright/right.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Document/right/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/right/List.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/app.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/nuxt.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt-app/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/read/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/read/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/Document" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images/icon" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -102,6 +104,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\subject\doc-nuxt\assets\images\icon" />
+      <recent name="D:\subject\doc-nuxt\components\Document\Top" />
+      <recent name="D:\subject\doc-nuxt\components\Document" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\subject\doc-nuxt\components\Document" />
     </key>
   </component>
@@ -122,7 +129,10 @@
       <workItem from="1652423022978" duration="18948000" />
       <workItem from="1652493100271" duration="14667000" />
       <workItem from="1652511737949" duration="4189000" />
-      <workItem from="1652663146099" duration="7618000" />
+      <workItem from="1652663146099" duration="11025000" />
+      <workItem from="1652695094293" duration="9045000" />
+      <workItem from="1652750452353" duration="32737000" />
+      <workItem from="1652836931871" duration="23013000" />
     </task>
     <servers />
   </component>
@@ -148,6 +158,11 @@
           <url>file://$PROJECT_DIR$/components/category/Content.vue</url>
           <line>103</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/Document/ReadLeft/Catalog.vue</url>
+          <line>199</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

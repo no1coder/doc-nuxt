@@ -1,5 +1,5 @@
 <template>
-  <div class="px-12 mt-7 mb-12 flex justify-between">
+  <div class="mt-7 mb-12 flex justify-between">
     <div class="flex items-center justify-between">
       <div class="h-3.5 flex items-center">
         <img src="~assets/images/icon/qunzu.svg" alt="" class="h-3.5 w-3.5"/>
