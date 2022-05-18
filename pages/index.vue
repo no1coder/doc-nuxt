@@ -1,17 +1,7 @@
 <template>
   <!--  遮罩层样式 -->
-  <div class="mask_layer" v-show="!mask_layer" @click="masklayer_hide">
-    <button class="search_close" ></button>
-    <div class="" style="padding: 150px">
-      <img src="@/assets/post/logo.png" style="margin:0 auto;"/>
-      <!--      搜索框-->
-      <div class="search_string">
-        <span class="searchBox-left"></span>
-        <input class="outline-0 px-9 search_Box" id="search_Box1" type="text" placeholder="搜索"  @click.stop >
-        <span class="search_input_right"></span>
-      </div>
-    </div>
-  </div>
+  <PopupSearch/>
+
 <div class="Home m-0 p-0 ">
     <div class="w-full">
       <div class="home ">
@@ -153,6 +143,7 @@
 import {ref} from "vue";
 import {useUserStore} from "../stores/userStore";
 import {logout} from "../util/util";
+import PopupSearch from "../components/PopupSearch";
 
 
 let mask_layer  = ref(true);       // 遮罩层隐藏显示
@@ -221,68 +212,6 @@ f.get('/api/book_categories').then(res=>{
 </script>
 
 <style lang="less">
-// 遮罩层关闭按钮
-.search_close {
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  z-index: 101;
-  right: 20px;
-  top: 20px;
-  text-indent: -9999em;
-  background: url(https://weread-1258476243.file.myqcloud.com/web/wrwebnjlogic/image/search_panel_close.c5182ad8.png) no-repeat;
-  background-size: 100%;
-}
-// 遮罩层搜索框位置
-.search_string{
-  position: relative;
-  max-width: 840px;
-  margin: 50px auto ;
-  text-align: center;
-}
-// 遮罩层搜索框样式
-.search_Box{
-  height: 52px;
-  font-size: 16px;
-  width: 100%;
-  color:white;
-  background-color:rgba(246,246,249,.1);
-  border-radius: 26px;
-}
-// 搜索框前标
-.searchBox-left{
-  background: url(https://weread-1258476243.file.myqcloud.com/web/wrwebnjlogic/image/search_magnifier_white_2x.d7af5de7.png) no-repeat;
-  background-size: 90%;
-  position: absolute;
-  top: 17px;
-  left: 13px;
-  width: 20px;
-  height: 20px;
-}
-// 搜索框后标
-.search_input_right {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  content: "";
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  background: url(https://weread-1258476243.file.myqcloud.com/web/wrwebnjlogic/image/search_return.0d4e04d8.png) no-repeat;
-  background-size: 100%;
-}
-// 遮罩层总体
-.mask_layer{
-  position: fixed;
-  width:100%;
-  height:100%;
-  top: 0;
-  left: 0;
-  background:rgba(0,0,0,1);
-  z-index:10;
-}
-
-
 
 
 .Home {
