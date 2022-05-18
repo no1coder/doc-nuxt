@@ -1,39 +1,22 @@
 <template>
-  <div style="width: 450px">
-    <n-form :model="model" :rules="rules">
-      <n-form-item path="tags" :show-label="false">
-        <n-dynamic-tags v-model:value="model.tags" />
-      </n-form-item>
-    </n-form>
-  </div>
+  <n-dynamic-tags v-model:value="tags" max="2" input-style="width:50px"/>
 </template>
 
-<script>
-import { defineComponent, ref } from "vue";
+<script lang="ts">
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
-  setup() {
+  setup () {
     return {
-      model: ref({
-        tags: ["教师", "程序员"]
-      }),
-      rules: {
-        tags: {
-          trigger: ["change"],
-          validator(rule, value) {
-            if (value.length >= 5)
-              return new Error("不得超过四个标签");
-            return true;
-          }
-        }
-      }
-    };
+      tags: ref['']
+    }
   }
-});
+})
 </script>
+<style scoped>
+::v-deep(.n-input--stateful){
+  width:80px!important;
+  text-align: left!important;
+}
 
-<style>
- .n-form{
-   padding-top: 20px;
- }
 </style>

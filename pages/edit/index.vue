@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="max">
     <div>
       <Title></Title>
     </div>
@@ -58,7 +58,7 @@ export default defineComponent({
       return `<mark>${token.text}</mark>`;
     },
 
-    sanitize(html) { return sanitizeHtml(html) },
+
     onGetCatalog(list) {
       this.catalogList = list
     },
@@ -82,6 +82,7 @@ export default defineComponent({
     }
   },
   setup () {
+   
 
     const text = ref('')
 
@@ -110,6 +111,7 @@ export default defineComponent({
     };
 
     return {
+
       MarkExtension:MarkExtension,
       ts1: ref(null),
       ts2: ref(1183135260000),
@@ -204,7 +206,10 @@ export default defineComponent({
 .md{
   height: calc(100vh - 63px);
 }
+/*.max{*/
+/*  background: #000000;*/
+/*}*/
 body{
-  background: black;
+  background: black!important;
 }
 </style>

@@ -22,4 +22,5 @@ export default {
   font-size: 18px;
   color: #1d2129;
 }
+
 </style>
