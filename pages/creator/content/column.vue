@@ -121,10 +121,6 @@
       }
     ,
     }
-
-   const components = {
-      ArchiveIcon
-    }
 </script>
 
 <style scoped>
