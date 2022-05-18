@@ -4,7 +4,7 @@
       {{items.name}}
     </h1>
     <div class="grid grid-cols-1 2xl:grid-cols-2">
-      <NuxtLink class="bg-gradient-to-r hover:from-black hover:to-stone-900" v-for="(item,index) in a.items.books.data" :key="item.id">
+      <NuxtLink class="bg-gradient-to-r hover:from-black hover:to-stone-900" v-for="(item,index) in items.books.data" :key="item.id">
         <div class="flex py-5 overflow-hidden items-center">
           <p class="flex-shrink w-12 lg:w-20 text-xl text-center text-white">{{index+1}}</p>
           <div class="flex-shrink-0 w-16 h-24 lg:w-28 lg:h-40 block">
