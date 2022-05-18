@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="b44251ad-d9fa-4d4d-85f5-ff052102cbec" name="默认变更列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/creator/content/column.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/creator/content/column.vue" afterDir="false" />
@@ -30,6 +31,13 @@
       <change beforePath="$PROJECT_DIR$/components/Document/right/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/right/List.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/read/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/read/index.vue" afterDir="false" />
 >>>>>>> origin/xxl
+=======
+    <list default="true" id="dd002365-f7a6-4dcd-9e3b-9592b17b1d68" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/catalogue/Content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Content.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/catalogue/NewlyBuild.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/NewlyBuild.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/catalogue/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Search.vue" afterDir="false" />
+>>>>>>> origin/zcq
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +55,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -55,6 +64,8 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+=======
+>>>>>>> origin/zcq
   <component name="GitToolBoxStore">
     <option name="recentBranches">
       <RecentBranches>
@@ -65,11 +76,19 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="zcq" />
+<<<<<<< HEAD
                     <option name="lastUsedInstant" value="1652090323" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1652090322" />
+=======
+                    <option name="lastUsedInstant" value="1652507765" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1652507764" />
+>>>>>>> origin/zcq
                   </RecentBranch>
                 </list>
               </option>
@@ -127,6 +146,7 @@
       <created>1652079461981</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1652079461981</updated>
       <workItem from="1652079473017" duration="27098000" />
       <workItem from="1652232183908" duration="30039000" />
@@ -154,6 +174,11 @@
       <workItem from="1652750452353" duration="32737000" />
       <workItem from="1652836931871" duration="23013000" />
 >>>>>>> origin/xxl
+=======
+      <updated>1652404968552</updated>
+      <workItem from="1652404975171" duration="31227000" />
+      <workItem from="1652493853920" duration="15336000" />
+>>>>>>> origin/zcq
     </task>
     <servers />
   </component>

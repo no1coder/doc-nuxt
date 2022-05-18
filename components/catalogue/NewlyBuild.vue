@@ -11,9 +11,12 @@
 			<n-input v-model:value="value" type="text" :placeholder="keys" @blur="add" />
 		</n-card>
 	</n-modal>
+	
+	
 </template>
 
 <script lang="ts" setup>
+
 interface Props {
   keys: String,
   addValue:Function
