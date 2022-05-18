@@ -3,13 +3,14 @@
     <n-space vertical class="h-screen tm">
 
 <!--                <n-switch v-model:value="collapsed" />-->
-      <n-layout has-sider class="h-screen relative">
+      <n-layout has-sider class="h-screen relative dark:bg-black">
 
         <n-layout-sider
             bordered
             :collapsed-width="5"
             show-trigger
             :class="{show : isShow}"
+            class="bg-grey dark:bg-black"
         >
           <DocumentReadLeftHead :demo="demo"></DocumentReadLeftHead>
           <button class="w-8 h-8 cang absolute top-24 an_niu flex items-center justify-center border-2"  @click="yc">
@@ -19,7 +20,7 @@
           </button>
 
           <n-tree
-              class="ml-4 border-box w-4/5"
+              class="ml-4 border-box w-4/5 dark:text-white"
               :data="menuOptions"
               block-line
               :default-expand-all="isExpand"
@@ -205,8 +206,12 @@ svg{
 }
 .n-layout{
   overflow:visible;
+  transition: width .5s cubic-bezier(0.1, 0, 0, 1) 0s;
 }
 ::v-deep(.n-layout-scroll-container){
   overflow-x: visible!important;
+}
+.n-tree-node-content__text{
+  color: #c2b5b5!important;
 }
 </style>

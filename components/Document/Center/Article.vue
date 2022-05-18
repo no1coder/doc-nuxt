@@ -1,7 +1,7 @@
 <template>
     <div class="article h-auto w-full container border-box">
       <div class="">
-        <div class="topic">开发&办公工具推荐</div>
+        <div class="topic text-black dark:text-white">开发&办公工具推荐</div>
         <div class="w-full h-96 mt-8 border-2 article1 text-4xl overflow-auto">
           <a href="">推荐一些常用的工具</a>，
         </div>
@@ -23,7 +23,6 @@ export default {
   font-size: 36px;
   line-height: 1.389;
   font-weight: 700;
-  color: #262626;
   display: inline;
   margin-bottom: 32px;
 }
