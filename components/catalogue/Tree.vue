@@ -1,7 +1,6 @@
 <template>
 	<div class="h-full auto-h">
 		<n-tree
-			class="one"
 			block-line
 			checkable
 			cascade
@@ -13,6 +12,8 @@
 			:checked-keys="checkedKeys"
 			:expanded-keys="expandedKeys"
 			@drop="handleDrop"
+			@mouseover="mouseOver"
+			@mouseleave="mouseLeave"
 			@update:checked-keys="handleCheckedKeysChange"
 			@update:expanded-keys="handleExpandedKeysChange"
 		/>
@@ -23,6 +24,26 @@
 <script lang="ts" setup>
 import { TreeOption, TreeDropInfo } from 'naive-ui'
 import Cinput from './CInput'
+import Add from './Add.vue'
+
+const show = ref(true)
+const clickAction = ref(false)
+const  mouseOver = () => {
+	show.value = false;
+}
+const mouseLeave = () => {
+	if(!clickAction.value) {
+		show.value = true;
+	}
+}
+const dropdownShow = (status)=>{
+	if(status){
+		clickAction.value = true
+	}else{
+		clickAction.value = false
+		show.value = true;
+	}
+}
 
 const items= [
 	{
@@ -86,10 +107,7 @@ const items= [
 ]
 
 //拖拽事件
-const findSiblingsAndIndex  = (
-	node: TreeOption,
-	nodes?: TreeOption[]
-): [TreeOption[], number] | [null, null] => {
+const findSiblingsAndIndex  = (node: TreeOption,nodes?: TreeOption[]): [TreeOption[], number] | [null, null] => {
 	if (!nodes) return [null, null]
 	for (let i = 0; i < nodes.length; ++i) {
 		const siblingNode = nodes[i]
@@ -100,6 +118,7 @@ const findSiblingsAndIndex  = (
 	return [null, null]
 };
 
+//点击触发input表单
 function renderLabel ({ option }: { option: TreeOption }) {
 	return h(
 		'div',
@@ -122,12 +141,11 @@ function renderLabel ({ option }: { option: TreeOption }) {
 		]
 	)
 }
+//清除input表单
 const Clone = (dataTree,item) => {
-	console.log(dataTree)
 	for (let i = 0; i  < dataTree.length; i++){
 		if(dataTree[i].key == item.key){
 			console.log(dataTree[i])
-			console.log(111111111111111111)
 			dataTree[i].input = false
 			console.log(dataTree)
 		}else{
@@ -138,14 +156,13 @@ const Clone = (dataTree,item) => {
 	}
 }
 
-const getDataIndex = (key) => {
-
-}
+//时间
 
 function renderSuffix ({ option }: { option: TreeOption }) {
 	return h(
-		'span',
-		{ innerHTML:'05-7 : 20:20' }
+		Add,{
+			show
+		}
 	)
 }
 
@@ -165,48 +182,62 @@ const handleCheckedKeysChange =  (checkedKeys: string[]) => {
 };
 
 const handleDrop = ({ node, dragNode, dropPosition }: TreeDropInfo)  => {
-		const [dragNodeSiblings, dragNodeIndex] = findSiblingsAndIndex(
-			dragNode,
+	const [dragNodeSiblings, dragNodeIndex] = findSiblingsAndIndex(
+		dragNode,
+		dataRef.value
+	)
+	if (dragNodeSiblings === null || dragNodeIndex === null) return
+	dragNodeSiblings.splice(dragNodeIndex, 1)
+	if (dropPosition === 'inside') {
+		if (node.children) {
+			node.children.unshift(dragNode)
+		} else {
+			node.children = [dragNode]
+		}
+	} else if (dropPosition === 'before') {
+		const [nodeSiblings, nodeIndex] = findSiblingsAndIndex(
+			node,
+			dataRef.value
+	)
+		if (nodeSiblings === null || nodeIndex === null) return
+		nodeSiblings.splice(nodeIndex, 0, dragNode)
+	} else if (dropPosition === 'after') {
+		const [nodeSiblings, nodeIndex] = findSiblingsAndIndex(
+			node,
 			dataRef.value
 		)
-		if (dragNodeSiblings === null || dragNodeIndex === null) return
-		dragNodeSiblings.splice(dragNodeIndex, 1)
-		if (dropPosition === 'inside') {
-			if (node.children) {
-				node.children.unshift(dragNode)
-			} else {
-				node.children = [dragNode]
-			}
-		} else if (dropPosition === 'before') {
-			const [nodeSiblings, nodeIndex] = findSiblingsAndIndex(
-				node,
-				dataRef.value
-			)
-			if (nodeSiblings === null || nodeIndex === null) return
-			nodeSiblings.splice(nodeIndex, 0, dragNode)
-		} else if (dropPosition === 'after') {
-			const [nodeSiblings, nodeIndex] = findSiblingsAndIndex(
-				node,
-				dataRef.value
-			)
-			if (nodeSiblings === null || nodeIndex === null) return
-			nodeSiblings.splice(nodeIndex + 1, 0, dragNode)
-		}
-		dataRef.value = Array.from(dataRef.value)
+		if (nodeSiblings === null || nodeIndex === null) return
+		nodeSiblings.splice(nodeIndex + 1, 0, dragNode)
 	}
+	dataRef.value = Array.from(dataRef.value)
+}
 
 
 </script>
-<style  lang="less">
+<style  lang="less" scoped>
 .auto-h {
 	min-height: calc(100vh - 160px);
+	.n-tree--block-line{
+		::v-deep .n-tree-node-wrapper{
+			border: 1px solid red;
+			
+			height: 45px;
+			.n-tree-node {
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				border:1px solid blue;
+				height: 100%;
+				line-height:100%;
+				padding-top: 5px !important;
+				font-size: 14px;
+				.n-tree-node-content{
+					align-items: center;
+				}
+			}
+		}	
+	}
 }
-.n-tree-node-wrapper{
-	height: 40px;
-}
-.n-tree-node {
-	height: 100%;
-	padding-top: 7px;
-	font-size: 14px;
-}
+
+
 </style>

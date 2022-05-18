@@ -1,12 +1,14 @@
-<template>
-	<input  type="text" :value="option.label"  @blur="blur2" class="w-1/3 h-7 -mt-3" ref="inputVal">
+<template> 
+	<input  type="text" :value="option.label"  @blur="blur2" class="w-1/3 h-8 mt-1" ref="inputVal" >
 </template>
 
 <script lang="ts" setup >
-const props = defineProps({
-	option:Object,
+interface Props {
+	option:Object
 	CloseInput:Function
-});
+}
+const {option,CloseInput}  = defineProps<Props>()
+
 
 const inputVal = ref(null)
 onMounted(()=>{
@@ -15,7 +17,7 @@ onMounted(()=>{
 
 //失去焦点，调用父组件中的函数，使其关闭input表单
 const blur2 = ()=>{
-	props.CloseInput(props.option)
+	CloseInput(option)
 }
 </script>
 

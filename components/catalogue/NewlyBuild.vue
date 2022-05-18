@@ -3,29 +3,26 @@
 		<n-card
 			style="width: 600px"
 			:bordered="false"
-			:title="props.keys"
+			:title="keys"
 			size="huge"
 			role="dialog"
 			aria-modal="true"
 		>
-			<n-input v-model:value="value" type="text" :placeholder="props.keys" @blur="add" />
+			<n-input v-model:value="value" type="text" :placeholder="keys" @blur="add" />
 		</n-card>
 	</n-modal>
 </template>
 
 <script lang="ts" setup>
-const props = defineProps({
-	keys:{
-		required:true,
-		type:String
-	},
-	addValue:{
-		type: Function,
-		required: true,
-	}
-})
+interface Props {
+  keys: String,
+  addValue:Function
+}
+const {keys,addValue} = defineProps<Props>()
+
 let value = ref(null);
+//添加数据
 const add = () => {
-	props.addValue(value.value)
+	addValue(value.value)
 }
 </script>
