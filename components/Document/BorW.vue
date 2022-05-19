@@ -1,6 +1,6 @@
 <template>
   <div :class="{hidden:isChange}" @click="changeL">
-    <img src="~assets/images/icon/taiy.svg" alt="" class="h-8 w-8 dark:bg-white">
+    <img src="~assets/images/icon/taiy.png" alt="" class="h-8 w-8">
   </div>
   <div :class="{hidden:!isChange}" @click="changeD" >
     <img src="~assets/images/icon/yuel.svg" alt="" class="h-8 w-8">
