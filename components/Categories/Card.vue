@@ -1,6 +1,6 @@
 <template>
     <h1 class="text-white ml-2 lg:ml-5 lg:text-lg my-5 flex items-center" :id="items.id">
-      <img src="plugins/category/biaoji.png" class="w-9 h-10 mr-1.5" alt=""/>
+      <img src="plugins/category/biaoji.png" class="w-9 h-10 mr-1.5 rotate-180" alt=""/>
       {{items.name}}
     </h1>
     <div class="grid grid-cols-1 2xl:grid-cols-2">
