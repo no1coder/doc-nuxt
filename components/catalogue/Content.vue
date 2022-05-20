@@ -1,16 +1,13 @@
 <template>
     <div class="mb-3 border rounded-md">
         <div class="h-full bg-white rounded-md" >
-<!--			<CatalogueTree :item="item"></CatalogueTree>-->
-				<div>{{i}}</div>
-	
 			<div class="h-full auto-h">
 				<n-tree
 					block-line
 					checkable
 					cascade
 					draggable
-					:data="data"
+					:data="Obj"
 					:default-expand-all="true"
 					:render-label="renderLabel"
 					:render-suffix="renderSuffix"
@@ -24,15 +21,6 @@
 				/>
 			</div>
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
         </div>
     </div>
 </template>
@@ -42,12 +30,11 @@
 import { TreeOption, TreeDropInfo } from 'naive-ui'
 import Cinput from './CInput'
 import Add from './Add.vue'
-
 interface Props {
-	// Obj:Object
+	Obj:Object
 }
-// const {Obj}  = defineProps<Props>()
-
+const {Obj}  = defineProps<Props>()
+console.log(Obj)
 const show = ref(true)
 const clickAction = ref(false)
 const  mouseOver = () => {
@@ -171,7 +158,7 @@ const Clone = (dataTree,item) => {
 			dataTree[i].input = false
 			console.log(dataTree)
 		}else{
-			if (dataTree[i].children.length >o){
+			if (dataTree[i].children.length >0){
 				Clone(dataTree[i].children,item)
 			}
 		}

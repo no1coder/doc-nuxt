@@ -8,7 +8,12 @@
 			role="dialog"
 			aria-modal="true"
 		>
-			<n-input v-model:value="value" type="text" :placeholder="keys" @blur="add" />
+			<input v-model="title" type="text" :placeholder="keys" class="border w-5/6 h-9 pl-3" />
+			<div class="w-5/6 h-9 mt-2">
+				<select name="`" id="1" class="h-full w-full border pl-3" >
+					<option class="h-full w-full" v-for="item in book_categories" @blur="add(item.id)" value="item.id">{{item.name}}</option>
+				</select>
+			</div>
 		</n-card>
 	</n-modal>
 </template>
@@ -19,10 +24,26 @@ interface Props {
   addValue:Function
 }
 const {keys,addValue} = defineProps<Props>()
-
-let value = ref(null);
-//添加数据
-const add = () => {
-	addValue(value.value)
+let title = ref()
+let params = {
+	category_id:'79',
 }
+
+//添加数据
+const  add = (item) => {
+	// console.log(item.id);
+	console.log(111111)
+	
+	// addValue(title.value)
+	f.post(`/api/book`,params ).then(
+		res => {
+			console.log(res)
+		}
+	)
+	console.log(params,11111)
+}
+
+
+let book_categories = ref()
+book_categories.value = await f.get(`/api/book_categories`);
 </script>

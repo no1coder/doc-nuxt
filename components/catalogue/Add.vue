@@ -33,7 +33,6 @@ import {h} from 'vue'
 let props = defineProps({
 	show:Boolean
 })
-console.log(props.show)
 const renderImg = (src) => {
 	return () => {
 		return h('img',{

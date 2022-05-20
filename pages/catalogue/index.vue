@@ -10,20 +10,24 @@
 			<div class="h-16">
 				<CatalogueSearch />
 			</div>
-			<div class="flex-auto" v-for="item in catalogue.data">
-				<CatalogueContent  :Obj="item" />
-				<div>{{typeof item}}</div>
+			<div class="flex-auto" >
+				<CatalogueContent  :Obj="ColumnDetails.catalogue.data" />
 			</div>
         </div>
     </div>
 </template> 
 
 <script lang="ts" setup>
+//获取个人专栏
+let ColumnDetails  = ref()
+ColumnDetails.value = await f.get(`/api/book/200`);
+console.log(ColumnDetails.value.catalogue.data)
+
 let catalogue = ref()
-catalogue.value = await f.get(`/api/posts`);
-console.log(2222)
-console.log(catalogue.value)
-console.log(111111)
+
+
+// catalogue.value = await f.get(``);
+
 </script>
 
 <style lang="less" scoped>
