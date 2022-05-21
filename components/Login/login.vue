@@ -3,9 +3,9 @@
   <span class="cursor-pointer" @click="showModal = true"  v-if="!userStore.token">
     登录
   </span>
-  <span v-show="userStore.token">
+  <span v-if="userStore.token">
       <n-dropdown trigger="click" :options="options" @select="handleSelect">
-        <span>{{ userInfo.username }}</span>
+        <span >{{ userInfo.username }}</span>
       </n-dropdown>
   </span>
 

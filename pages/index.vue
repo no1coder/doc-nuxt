@@ -2,7 +2,7 @@
   <!--  遮罩层样式 -->
   <PopupSearch/>
 
-<div class="Home m-0 p-0 ">
+  <div class="Home m-0 p-0 ">
     <div class="w-full">
       <div class="home ">
 
@@ -10,38 +10,31 @@
         <div class="topbgcol">
           <div class="head max-w-screen-xl mx-auto topbgcol" >
             <div class="float-right  text-center mt-5 mr-5 ">
-             <div >
-        <NuxtLink to="###">传书到手机</NuxtLink> |
-        <NuxtLink>墨水屏版</NuxtLink> |
-        <NuxtLink>手机版</NuxtLink> |
-        <NuxtLink >微信听书</NuxtLink> |
+              <div >
+                <NuxtLink to="###">传书到手机</NuxtLink> |
+                <NuxtLink>墨水屏版</NuxtLink> |
+                <NuxtLink>手机版</NuxtLink> |
+                <NuxtLink >微信听书</NuxtLink> |
 
-        <NuxtLink class="cursor-pointer">
-          <login class="cursor-pointer" :showModal="true" v-if="!userStore.token">
-          </login>
+                <NuxtLink class="cursor-pointer">
+                  <login/>
+                </NuxtLink>
 
-          <span v-show="userStore.token">
-      <n-dropdown trigger="click" :options="options" @select="handleSelect">
-        <span>用户资料</span>
-      </n-dropdown>
-          </span>
-        </NuxtLink>
-
-      </div>
+              </div>
             </div>
-          </div>  
+          </div>
         </div>
 
         <!-- 搜索栏 -->
         <div class="topbgcol">
           <PostSearchDemo class="max-w-screen-xl mx-auto topbgcol" :masklayer1="masklayer1"/>
         </div>
-        
+
 
         <!-- 图书列表 -->
         <div class="btbgcol ">
           <div class="bgcol grid grid-cols-1 lg:grid-cols-2  max-w-screen-xl mx-auto">
-            
+
             <!-- 飙升出版书列表 -->
             <div class="">
               <div class=" pl-9 pt-8 mt-8  mt-4 h-40">
@@ -53,11 +46,11 @@
                 <PostBookCard/><PostBookCard/><PostBookCard/>
               </div>
               <div class="cheekAll">
-                  查看全部
-                  <div><img src="@/assets/post/右.png" /></div>
-                </div>
+                查看全部
+                <div><img src="@/assets/post/右.png" /></div>
+              </div>
             </div>
-            
+
             <!-- 新书出版列表 -->
             <div >
               <div class=" pl-9 pt-8 mt-8  mt-4 h-40">
@@ -66,40 +59,40 @@
               </div>
               <div class="bookCardR grid  grid-cols-1 sm:grid-cols-2">
                 <PostBookCard /><PostBookCard/><PostBookCard/>
-              <PostBookCard/><PostBookCard/><PostBookCard/>
-              
+                <PostBookCard/><PostBookCard/><PostBookCard/>
+
               </div>
               <div class="cheekAll hover">
                 查看全部
                 <div><img src="@/assets/post/右.png" /></div>
               </div>
-            
+
             </div>
-            
-          
-            
+
+
+
             <!-- 总榜出版书单列表 -->
             <div class="">
               <!-- 左侧新榜出版表头 -->
-              
+
               <div class=" pl-9 pt-8 mt-8  mt-4 h-40">
                 <img src="@/assets/post/top200xinshu.png" class="logoa"/>
                 <div class="spanb">最近90天出版的热门书籍</div>
               </div>
               <div class="bookCardR grid  grid-cols-1 sm:grid-cols-2">
-              <PostBookCard /><PostBookCard/><PostBookCard/>
-              <PostBookCard/><PostBookCard/><PostBookCard/>
-              
+                <PostBookCard /><PostBookCard/><PostBookCard/>
+                <PostBookCard/><PostBookCard/><PostBookCard/>
+
               </div>
               <div class="cheekAll hover">
                 查看全部
                 <div><img src="@/assets/post/右.png" /></div>
               </div>
-            
+
             </div>
-            
+
             <!-- 男生更新书单列表 -->
-          <div >
+            <div >
               <div class=" pl-9 pt-8 mt-8  mt-4 h-40">
                 <img src="@/assets/post/gengxin.png" class="logoa"/>
                 <div class="spand">最近更新的热门男生小说</div>
@@ -112,7 +105,7 @@
                 查看全部
                 <div><img src="@/assets/post/右.png" /></div>
               </div>
-            
+
             </div>
           </div>
         </div>
@@ -135,7 +128,7 @@
         -->
       </div>
     </div>
-</div>
+  </div>
 
 </template>
 
@@ -215,12 +208,12 @@ f.get('/api/book_categories').then(res=>{
 
 
 .Home {
-  font-family:PingFang SC,-apple-system,SF UI Text,Lucida Grande,STheiti,Microsoft YaHei,sans-serif;  
+  font-family:PingFang SC,-apple-system,SF UI Text,Lucida Grande,STheiti,Microsoft YaHei,sans-serif;
 }
 .head{
   color: #949596;
   background-color:#1f2022;
-  height:60px; 
+  height:60px;
   a{
     padding:10px 10px ;
   }
@@ -236,7 +229,7 @@ f.get('/api/book_categories').then(res=>{
 
 }
 .btbgcol{
-    background-color:#1f2022;
+  background-color:#1f2022;
 }
 .logoa{
   width:204px;

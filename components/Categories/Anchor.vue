@@ -31,6 +31,8 @@ const goId = (id)=>{
   let offsetTop = anchor.offsetTop-80;
   let gundongSize = document.documentElement.scrollTop
   gundong(offsetTop,gundongSize)
+
+
   // document.documentElement.scrollTop = anchor.offsetTop-80;
   active.value = id;
 }

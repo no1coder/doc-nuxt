@@ -57,7 +57,7 @@ import {ref} from "vue";
 import PopupSearch from "../../components/PopupSearch";
 
 let category = ref({})
-// category.value = await f.get(`/api/book_categories`)
+category.value = await f.get(`/api/book_categories`)
 console.log(category.value )
 let bookData = reactive([
   {"id":79,"name":"\u524d\u7aef","hash_id":"2kK"},
@@ -71,8 +71,6 @@ let bookData = reactive([
   {"id":396,"name":"UI\/UE","hash_id":"qVR"},
   {"id":399,"name":"\u5176\u4ed6","hash_id":"wEm"}
 ])
-
-
 
 
 
