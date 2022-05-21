@@ -139,7 +139,7 @@ import {logout} from "../util/util";
 import PopupSearch from "../components/PopupSearch";
 
 
-let mask_layer  = ref(true);       // 遮罩层隐藏显示
+let mask_layer  = ref(true);       // 遮罩层隐藏
 
 // 遮罩层显示效果
 const masklayer1 = (e) => {
@@ -201,12 +201,9 @@ f.get('/api/book_categories').then(res=>{
 })
 
 
-
 </script>
 
 <style lang="less">
-
-
 .Home {
   font-family:PingFang SC,-apple-system,SF UI Text,Lucida Grande,STheiti,Microsoft YaHei,sans-serif;
 }

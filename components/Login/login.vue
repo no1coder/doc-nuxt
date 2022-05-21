@@ -6,6 +6,7 @@
   <span v-if="userStore.token">
       <n-dropdown trigger="click" :options="options" @select="handleSelect">
         <span >{{ userInfo.username }}</span>
+
       </n-dropdown>
   </span>
 
@@ -224,10 +225,10 @@
             </n-form-item>
           </div>
 
-<!--          13966539890-->
           <div class="formSize">
             <n-form-item path="password" class="mt-25" >
               <n-input show-password-on="click"   v-model:value="form.password" type="password" placeholder="请输入新密码">
+
               </n-input>
             </n-form-item>
           </div>
