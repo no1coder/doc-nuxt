@@ -7,7 +7,7 @@
       <input class="outline-0 navbar-input h-9 w-4/12 text-sm px-9 mx-5 sm:mx-12 rounded-2xl" type="text" placeholder="搜索">
       <div class="flex justify-end items-center w-48 mr-10 md:w-full">
         <div class="hidden lg:block items-center">
-          <NuxtLink class="opacity-70 ml-3 text-base text-white font-medium">
+          <NuxtLink class="opacity-70 ml-3 text-base text-white font-medium" to="/">
             首页
           </NuxtLink>
           <span class="opacity-30 w-px h-4 bg-white ml-5 inline-block"></span>

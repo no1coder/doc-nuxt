@@ -6,7 +6,7 @@
         <div class="container m-auto min-h-screen">
           <CategoriesAnchor :obj="category"/>
           <div class="pt-[4.5rem] ml-0 lg:ml-48">
-            <CategoriesCard v-for="items in book" :items="items" :key="items.id" :obj="items"/>
+            <CategoriesCard v-for="items in book" :items="items"/>
           </div>
         </div>
       </div>
@@ -18,6 +18,7 @@
 
 
 import {ref} from "vue";
+
 
 let category = ref({})
 category.value = await f.get(`/api/book_categories`)

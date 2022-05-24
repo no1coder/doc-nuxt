@@ -35,7 +35,9 @@
 </template>
 
 <script setup>
-
+// items  Object  null   这是本书的数据
+// obj    object  {}     这是分类数据
+// func   (items)=>items   点击回调
 let a = defineProps({
   items:{
     type:Object,
@@ -43,10 +45,9 @@ let a = defineProps({
   },
   obj:{
     type:Object,
-    default:()=>{
-      return {}
-    }
-  }
+    default:{}
+  },
+
 })
 
 
@@ -55,3 +56,4 @@ let a = defineProps({
 <style scoped>
 
 </style>
+
