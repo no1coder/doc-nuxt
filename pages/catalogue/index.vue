@@ -11,22 +11,23 @@
 				<CatalogueSearch />
 			</div>
 			<div class="flex-auto" >
-				<CatalogueContent  :Obj="ColumnDetails.catalogue.data" />
+				<CatalogueContents  :Obj="ColumnDetails" />
 			</div>
         </div>
     </div>
 </template> 
 
 <script lang="ts" setup>
+import { provide} from 'vue'
 //获取个人专栏
-let ColumnDetails  = ref()
-ColumnDetails.value = await f.get(`/api/book/200`);
-console.log(ColumnDetails.value.catalogue.data)
-
-let catalogue = ref()
-
-
-// catalogue.value = await f.get(``);
+onMounted(() => {
+    RetrieveData();
+})
+let ColumnDetails  = ref([])
+const RetrieveData = async() => {
+    ColumnDetails.value = await f.get(`/api/book/200/catalogue`);
+}
+provide('key',RetrieveData) // 若提供的是非字符串值会导致错误
 
 </script>
 

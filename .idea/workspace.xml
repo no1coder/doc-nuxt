@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8903327f-b78c-42be-bd37-63ed32f476f9" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/icon/sc.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/icon/taiy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/icon/yuel.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/右.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/问号 (1).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Document/BorW.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Document/Fdj.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Document/Shouc.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Document/Xinjian.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/PopupSearch.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/creator/activities.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/creator/layout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/creator/sidebar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/creator/wengzhang.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/creator/zhuanlan.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/creat.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/creator/content/article.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/creator/content/column.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/creator/home/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/webstack/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/category/biaoji.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Button-1/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Release/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Categories/Anchor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Categories/Anchor.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Categories/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Categories/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Center.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Center.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/Article.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Article.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/ArticleBottom.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/ArticleBottom.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/Review.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Review.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/Share/Xiang.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Share/Xiang.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Center/Zan/Dian.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Center/Zan/Dian.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/ReadLeft/Catalog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/ReadLeft/Catalog.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/ReadLeft/Head.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/ReadLeft/Head.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/Top/Tou.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/Top/Tou.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/fixicon/Qipao.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/fixicon/Qipao.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/fixicon/Zan.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/fixicon/Zan.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/readright/right.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/readright/right.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Document/right/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Document/right/List.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Login/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Login/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Title/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Title/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/button-list/Form/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/button-list/Form/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/button-list/Lastbtn/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/button-list/Lastbtn/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/button-list/PostPage/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/button-list/PostPage/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/button-list/Tags/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/button-list/Tags/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/catalogue/Add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Add.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/catalogue/CInput.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/CInput.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/catalogue/Content.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Content.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/catalogue/NewlyBuild.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/NewlyBuild.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/catalogue/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/catalogue/Search.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/post/SearchDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/post/SearchDemo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Head/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/catalogue/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/catalogue/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/category/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/edit/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/edit/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/read/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/read/index.vue" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29Q9r95SNswqnTEi1sbJEvju60N" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MTConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm 2021.3.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="8903327f-b78c-42be-bd37-63ed32f476f9" name="变更" comment="" />
+      <created>1653034638060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653034638060</updated>
+      <workItem from="1653034639557" duration="15515000" />
+      <workItem from="1653402828230" duration="412000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

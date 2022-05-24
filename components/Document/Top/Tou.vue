@@ -1,9 +1,13 @@
 <template>
-    <div class=" flex w-full items-center justify-end h-16">
-      <div class="flex icons h-auto justify-end items-center fixed">
-        <span class="w-6 h-6 mr-4"><img src="~assets/images/icon/fangdajing.svg" alt="" class="w-full"></span>
-        <span class="w-6 h-6 mr-4 "><img src="~assets/images/icon/shoucang.svg" alt="" class="w-full" ></span>
+  <div class="w-full h-16 mr-1 ">
+    <div class="top_d m-auto flex fixed flex items-center justify-between h-16 bg-white dark:bg-black">
+      <div class="w-9/12 font-bold dark:text-white">开发&办公工具推荐</div>
+      <div class="icons1 flex h-auto right-10 fixed items-center">
+        <DocumentFdj></DocumentFdj>
+        <DocumentShouc></DocumentShouc>
+        <DocumentBorW></DocumentBorW>
       </div>
+    </div>
   </div>
 </template>
 
@@ -12,7 +16,10 @@
 </script>
 
 <style scoped>
-.icons{
-
+.top_d{
+  width:78%;
+  z-index: 999;
+  padding:0 20px;
 }
+
 </style>

@@ -1,18 +1,16 @@
 <template>
 	<n-modal >
 		<n-card
-			style="width: 600px"
+			style="width: 500px"
 			:bordered="false"
-			:title="keys"
+			:title="JudgmentData(keys)"
 			size="huge"
 			role="dialog"
 			aria-modal="true"
 		>
-			<input v-model="title" type="text" :placeholder="keys" class="border w-5/6 h-9 pl-3" />
-			<div class="w-5/6 h-9 mt-2">
-				<select name="`" id="1" class="h-full w-full border pl-3" >
-					<option class="h-full w-full" v-for="item in book_categories" @blur="add(item.id)" value="item.id">{{item.name}}</option>
-				</select>
+			<input v-model="title" type="text" :placeholder="JudgmentData(keys)" class="border w-full h-9 pl-3" />
+			<div class="mt-10 flex">
+				<button class="w-1/2 mx-auto  h-10 text-white text-base bg-red-500 hover:bg-red-600 rounded-full" @click="add(keys)">添加</button>
 			</div>
 		</n-card>
 	</n-modal>
@@ -20,30 +18,26 @@
 
 <script lang="ts" setup>
 interface Props {
-  keys: String,
-  addValue:Function
+	keys: Number,
+	addValue:Function
 }
-const {keys,addValue} = defineProps<Props>()
+let {keys,addValue} = defineProps<Props>()
 let title = ref()
-let params = {
-	category_id:'79',
+
+//添加数据,清空数据框
+const add = (id) => {
+	addValue(title.value, id)
+	title.value = ''
 }
 
-//添加数据
-const  add = (item) => {
-	// console.log(item.id);
-	console.log(111111)
-	
-	// addValue(title.value)
-	f.post(`/api/book`,params ).then(
-		res => {
-			console.log(res)
-		}
-	)
-	console.log(params,11111)
+//显示添加的内容
+const JudgmentData = (keys) => {
+	if(keys === 1){
+		return '添加文档';
+	}else if(keys === 0){
+		return '新建分组'
+	}else{
+		return '添加链接'
+	}
 }
-
-
-let book_categories = ref()
-book_categories.value = await f.get(`/api/book_categories`);
 </script>

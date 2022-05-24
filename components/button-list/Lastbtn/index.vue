@@ -26,7 +26,8 @@ export default {
   /*border: 1px solid red;*/
 }
 .btn1{
-  border: 1px solid #1e80ff;
+  background: #1e80ff;
+  color: white;
   border-radius: 3px;
 }
 .btn2{

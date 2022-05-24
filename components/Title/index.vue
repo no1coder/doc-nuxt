@@ -5,14 +5,14 @@
           <input type="text" value="输入文章标题..." class="input theme" onfocus="if(value=='输入文章标题...'){value=''}" onblur="if(value==''){value='输入文章标题...'}">
         </div>
         <div class="publish">
-          <div class="theme">保存成功</div>
+
           <div>
             <button class="draft">草稿箱</button>
           </div>
-          <div class="release-btn"><a> <Button-1></Button-1> </a></div>
+          <div class="release-btn"><a> <Release></Release> </a></div>
 
           <div>
-            <div class="login-header">登录</div>
+            <Login></Login>
           </div>
         </div>
   </div>
@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style>
+<style >
 .title-box{
   display: flex;
   align-items: center;
@@ -88,7 +88,11 @@ export default {
   line-height: 32px;
   font-size: 14px;
 }
-
+.publish>div:nth-child(3)>button:hover{
+  border: 0px;
+  background: #388eff;
+  color: white;
+}
 .publish>div:nth-child(4){
   display: flex;
   justify-content: center;
@@ -105,7 +109,10 @@ export default {
   cursor: pointer;
 }
 .theme{
+  /*padding: 5px -25px;*/
+  /*border: 1px red solid;*/
   background: #000000!important;
   color: #999999!important;
 }
+
 </style>

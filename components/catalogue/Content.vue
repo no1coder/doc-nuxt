@@ -2,118 +2,46 @@
     <div class="mb-3 border rounded-md">
         <div class="h-full bg-white rounded-md" >
 			<div class="h-full auto-h">
-				<n-tree
+				<!-- <n-tree
 					block-line
 					checkable
 					cascade
 					draggable
-					:data="Obj"
+					:data="Obj2"
+					key-field="id"
+					label-field="title"
 					:default-expand-all="true"
 					:render-label="renderLabel"
 					:render-suffix="renderSuffix"
 					:checked-keys="checkedKeys"
 					:expanded-keys="expandedKeys"
 					@drop="handleDrop"
-					@mouseover="mouseOver"
-					@mouseleave="mouseLeave"
+				
 					@update:checked-keys="handleCheckedKeysChange"
 					@update:expanded-keys="handleExpandedKeysChange"
-				/>
+				/> -->
+
+
 			</div>
-			
         </div>
     </div>
 </template>
 
-
 <script lang="ts" setup>
 import { TreeOption, TreeDropInfo } from 'naive-ui'
+//修改框
 import Cinput from './CInput'
+//右边按钮内容
 import Add from './Add.vue'
 interface Props {
 	Obj:Object
 }
 const {Obj}  = defineProps<Props>()
-console.log(Obj)
+console.log(111)
+
 const show = ref(true)
 const clickAction = ref(false)
-const  mouseOver = () => {
-	show.value = false;
-}
-const mouseLeave = () => {
-	if(!clickAction.value) {
-		show.value = true;
-	}
-}
-const dropdownShow = (status)=>{
-	if(status){
-		clickAction.value = true
-	}else{
-		clickAction.value = false
-		show.value = true;
-	}
-}
 
-const items= [
-	{
-		label: '0',
-		key: '0',
-		input:false,
-		children: [
-			{
-				label: '0-0',
-				key: '0-0',
-				input:false,
-				children: [
-					{ label: '0-0-0', key: '0-0-0',		input:false,
-					},
-					{ label: '0-0-1', key: '0-0-1',		input:false,
-					}
-				]
-			},
-			{
-				label: '0-1',
-				key: '0-1',
-				input:false,
-				children: [
-					{ label: '0-1-0', key: '0-1-0',		input:false,
-					},
-					{ label: '0-1-1', key: '0-1-1',		input:false,
-					}
-				]
-			}
-		]
-	},
-	{
-		label: '1',
-		key: '1',
-		input:false,
-		children: [
-			{
-				label: '1-0',
-				key: '1-0',
-				input:false,
-				children: [
-					{ label: '1-0-0', key: '1-0-0',		input:false,
-					},
-					{ label: '1-0-1', key: '1-0-1',		input:false,
-					}
-				]
-			},
-			{
-				label: '1-1',
-				key: '1-1',
-				input:false,
-				children: [
-					{ label: '1-1-0', key: '1-1-0',		input:false,
-					},
-					{ label: '1-1-1', key: '1-1-1',		input:false,
-					}
-				]
-			}
-		]
-	}
-]
 
 //拖拽事件
 const findSiblingsAndIndex  = (node: TreeOption,nodes?: TreeOption[]): [TreeOption[], number] | [null, null] => {
@@ -126,6 +54,7 @@ const findSiblingsAndIndex  = (node: TreeOption,nodes?: TreeOption[]): [TreeOpti
 	}
 	return [null, null]
 };
+
 
 //点击触发input表单
 function renderLabel ({ option }: { option: TreeOption }) {
@@ -177,7 +106,7 @@ function renderSuffix ({ option }: { option: TreeOption }) {
 
 const expandedKeysRef = ref<string[]>([])
 const checkedKeysRef = ref<string[]>([])
-const dataRef = ref(items || [])
+const dataRef = ref( [])
 
 const expandedKeys = expandedKeysRef;
 const checkedKeys = checkedKeysRef;
@@ -250,20 +179,3 @@ const handleDrop = ({ node, dragNode, dropPosition }: TreeDropInfo)  => {
 </style>
 
 
-
-
-<!--<style lang="less" scoped>-->
-
-<!--.open{-->
-<!--    background: url('~/assets/images/do.svg') no-repeat 0px -2px;-->
-<!--    background-size: 18px 18px;-->
-<!--}-->
-<!--.fold{-->
-<!--    background: url('~/assets/images/向右.svg') no-repeat 0px 2px;-->
-<!--    background-size: 18px 18px;-->
-<!--}-->
-<!--.AllOpen {-->
-<!--	background: url('~/assets/images/do.svg') no-repeat 62px -2px;-->
-<!--	background-size: 18px 18px;-->
-<!--}-->
-<!--</style>-->
